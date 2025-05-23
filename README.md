@@ -26,7 +26,7 @@ Ce portfolio présente mes compétences et projets liés aux différents blocs d
 3. Activez GitHub Pages depuis les paramètres du dépôt :  
    - Branche : `main`  
    - Dossier : `/root`  
-4. Votre portfolio sera accessible via :  
+4. Mon portfolio sera accessible via :  
    `https://Fares6740.github.io/portfolio-bts-sio/`
 
 ---
