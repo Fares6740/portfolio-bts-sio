@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio BTS SIO SISR</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to right, #f0f4f8, #d9e2ec);
+      margin: 0;
+      padding: 0;
+      color: #333;
+      display: flex;
+    }
+    aside {
+      background: #001f54;
+      color: white;
+      padding: 20px;
+      width: 250px;
+      min-height: 100vh;
+      position: fixed;
+    }
+    aside h2 {
+      font-size: 22px;
+      margin-top: 0;
+      color: #fff;
+    }
+    aside p {
+      font-size: 15px;
+      line-height: 1.5;
+    }
+    .main-content {
+      margin-left: 250px;
+      width: 100%;
+    }
+    header {
+      background: linear-gradient(to right, #0077b6, #023e8a);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #03045e;
+      display: flex;
+      justify-content: center;
+      padding: 14px;
+      gap: 25px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 10px 15px;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
+    nav a:hover {
+      background-color: #00b4d8;
+      color: #fff;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+    .section {
+      background-color: white;
+      margin-bottom: 30px;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #0077b6;
+      margin-top: 0;
+    }
+    label {
+      display: inline-block;
+      padding: 12px 22px;
+      background-color: #0077b6;
+      color: white;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 15px;
+    }
+    input[type="file"] {
+      display: none;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 14px;
+      margin-top: 12px;
+      margin-bottom: 20px;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+    form button {
+      padding: 12px 28px;
+      background-color: #0077b6;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #f1f5f9;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <aside>
+    <h2>À propos</h2>
+    <p>Je suis étudiant en BTS SIO option SISR, passionné par les réseaux, la cybersécurité et les systèmes informatiques. Ce portfolio présente mes projets et compétences acquises.</p>
+  </aside>
+
+  <div class="main-content">
+    <header>
+      <h1>Portfolio BTS SIO - Option SISR</h1>
+    </header>
+
+    <nav>
+      <a href="#cv">CV</a>
+      <a href="#bloc1">Bloc 1</a>
+      <a href="#bloc2">Bloc 2</a>
+      <a href="#bloc3">Bloc 3</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+      <section id="cv" class="section">
+        <h2>Mon CV</h2>
+        <label for="cvUpload">Téléverser votre CV</label>
+        <input type="file" id="cvUpload" accept=".pdf,.doc,.docx" />
+      </section>
+
+      <section id="bloc1" class="section">
+        <h2>Bloc 1 - Support informatique</h2>
+        <label for="bloc1Upload">Ajouter des fichiers</label>
+        <input type="file" id="bloc1Upload" multiple />
+      </section>
+
+      <section id="bloc2" class="section">
+        <h2>Bloc 2 - Administration réseaux</h2>
+        <label for="bloc2Upload">Ajouter des fichiers</label>
+        <input type="file" id="bloc2Upload" multiple />
+      </section>
+
+      <section id="bloc3" class="section">
+        <h2>Bloc 3 - Cybersécurité</h2>
+        <label for="bloc3Upload">Ajouter des fichiers</label>
+        <input type="file" id="bloc3Upload" multiple />
+      </section>
+
+      <section id="contact" class="section">
+        <h2>Contact</h2>
+        <form action="https://formspree.io/f/xovdrwba" method="POST">
+          <input type="text" name="nom" placeholder="Votre nom" required />
+          <input type="email" name="email" placeholder="Votre email" required />
+          <textarea name="message" rows="6" placeholder="Votre message" required></textarea>
+          <button type="submit">Envoyer le message</button>
+        </form>
+      </section>
+    </div>
+
+    <footer>
+      &copy; 2025 Fares6740 - Portfolio BTS SIO SISR
+    </footer>
+  </div>
+</body>
+</html>
