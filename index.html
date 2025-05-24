@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio BTS SIO SISR</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
   <style>
     :root {
       --bg-light: #f8fbfd;
@@ -121,11 +120,6 @@
     body.dark .skills-list .skill {
       background-color: #2a2a2a; color: #90e0ef;
     }
-    #pdf-viewer {
-      width: 100%;
-      height: 600px;
-      border: 1px solid #ccc;
-    }
     @media (max-width: 768px) {
       nav { flex-direction: column; gap: 10px; }
       header h1 { font-size: 2rem; }
@@ -136,19 +130,22 @@
   <button class="toggle-mode" onclick="document.body.classList.toggle('dark')">🌙 / ☀️</button>
   <header><h1>Portfolio BTS SIO - Option SISR</h1></header>
   <nav>
+    <a href="#apropos">🧑‍💼 À propos</a>
     <a href="#cv">📄 CV</a>
     <a href="#realisations-pro">🛠️ Réalisations Professionnelles</a>
     <a href="#realisations-formation">🎓 Réalisations en Formation</a>
-    <a href="#skills">💻 Compétences</a>
     <a href="#certifications">📜 Certifications</a>
-    <a href="#apropos">🧑‍💼 À propos</a>
+    <a href="#skills">💻 Compétences</a>
     <a href="#contact">📬 Contact</a>
   </nav>
   <div class="container">
+    <section id="apropos" class="section">
+      <h2>🧑‍💼 À propos de moi</h2>
+      <p>Bonjour, je m'appelle Fares et je suis actuellement étudiant en BTS SIO (Services Informatiques aux Organisations), option SISR. Passionné par l'administration des systèmes, la sécurité réseau et les infrastructures informatiques, je développe mes compétences techniques à travers des projets pratiques et une alternance en entreprise.</p>
+      <p>Mon portfolio présente mes réalisations, mes compétences ainsi que les documents liés à mes blocs de formation. N'hésitez pas à me contacter pour toute question ou collaboration !</p>
+    </section>
     <section id="cv" class="section">
       <h2>📄 Mon CV</h2>
-      <canvas id="pdf-viewer"></canvas>
-      <br><br>
       <a href="https://drive.google.com/file/d/1myqVThm8p_t2KsLXEJNxRaxAbWjMIVYD/view?usp=sharing" target="_blank" class="button">Télécharger mon CV</a>
     </section>
     <section id="realisations-pro" class="section">
@@ -158,6 +155,10 @@
     <section id="realisations-formation" class="section">
       <h2>🎓 Réalisations en Formation</h2>
       <a href="https://drive.google.com/drive/folders/1dKBVK1qHl-ObvrDof8_-_TLIegPayhJ7?usp=drive_link" target="_blank" class="button">Voir les réalisations en formation</a>
+    </section>
+    <section id="certifications" class="section">
+      <h2>📜 Certifications</h2>
+      <a href="https://drive.google.com/drive/folders/1gX97jJW5LGQYaU5pusFFjXxP4jPWjknV?usp=drive_link" target="_blank" class="button">Voir les certifications</a>
     </section>
     <section id="skills" class="section">
       <h2>💻 Compétences techniques</h2>
@@ -172,15 +173,6 @@
         <div class="skill">HTML / CSS / JS</div>
       </div>
     </section>
-    <section id="certifications" class="section">
-      <h2>📜 Certifications</h2>
-      <a href="https://drive.google.com/drive/folders/1gX97jJW5LGQYaU5pusFFjXxP4jPWjknV?usp=drive_link" target="_blank" class="button">Voir les certifications</a>
-    </section>
-    <section id="apropos" class="section">
-      <h2>🧑‍💼 À propos de moi</h2>
-      <p>Bonjour, je m'appelle Fares et je suis actuellement étudiant en BTS SIO (Services Informatiques aux Organisations), option SISR. Passionné par l'administration des systèmes, la sécurité réseau et les infrastructures informatiques, je développe mes compétences techniques à travers des projets pratiques et une alternance en entreprise.</p>
-      <p>Mon portfolio présente mes réalisations, mes compétences ainsi que les documents liés à mes blocs de formation. N'hésitez pas à me contacter pour toute question ou collaboration !</p>
-    </section>
     <section id="contact" class="section">
       <h2>📬 Contact</h2>
       <form action="https://formspree.io/f/xovdrwba" method="POST">
@@ -192,31 +184,5 @@
     </section>
   </div>
   <footer>© 2025 Fares - Portfolio BTS SIO SISR. Tous droits réservés.</footer>
-  <script>
-    // Remplacez l'URL par le lien direct vers votre PDF
-    const url = 'https://drive.google.com/uc?export=download&id=1myqVThm8p_t2KsLXEJNxRaxAbWjMIVYD';
-
-    // Charger le PDF
-    pdfjsLib.getDocument(url).promise.then(function(pdf) {
-      // Récupérer la première page
-      pdf.getPage(1).then(function(page) {
-        const scale = 1.5;
-        const viewport = page.getViewport({ scale: scale });
-
-        // Préparer le canvas
-        const canvas = document.getElementById('pdf-viewer');
-        const context = canvas.getContext('2d');
-        canvas.height = viewport.height;
-        canvas.width = viewport.width;
-
-        // Rendre la page
-        const renderContext = {
-          canvasContext: context,
-          viewport: viewport
-        };
-        page.render(renderContext);
-      });
-    });
-  </script>
 </body>
 </html>
