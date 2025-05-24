@@ -121,6 +121,18 @@
     body.dark .skills-list .skill {
       background-color: #2a2a2a; color: #90e0ef;
     }
+    .social-links {
+      margin-top: 10px;
+    }
+    .social-link {
+      color: #0077b6; /* Couleur de LinkedIn */
+      font-size: 24px;
+      margin: 0 10px;
+      transition: color 0.3s ease;
+    }
+    .social-link:hover {
+      color: #0096c7; /* Couleur de survol */
+    }
     @media (max-width: 768px) {
       nav { flex-direction: column; gap: 10px; }
       header h1 { font-size: 2rem; }
@@ -184,7 +196,14 @@
       </form>
     </section>
   </div>
-  <footer>© 2025 Fares - Portfolio BTS SIO SISR. Tous droits réservés.</footer>
+  <footer>
+    © 2025 Fares - Portfolio BTS SIO SISR. Tous droits réservés.
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/fares-elaissaoui/" target="_blank" class="social-link">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </div>
+  </footer>
   <script>
     // Fonction pour basculer le mode sombre
     function toggleDarkMode() {
@@ -207,4 +226,3 @@
   </script>
 </body>
 </html>
-
