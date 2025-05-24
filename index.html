@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio BTS SIO SISR</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <style>
     :root {
       --bg-light: #f8fbfd;
@@ -133,9 +132,121 @@
     .social-link:hover {
       color: #0096c7; /* Couleur de survol */
     }
+    .badges {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 20px;
+    }
+    .badge img {
+      height: 30px;
+    }
+
+    /* Timeline Styles */
+    .timeline {
+      position: relative;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .timeline::after {
+      content: '';
+      position: absolute;
+      width: 6px;
+      background-color: var(--primary);
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      margin-left: -3px;
+    }
+
+    .timeline-item {
+      padding: 10px 40px;
+      position: relative;
+      background-color: inherit;
+      width: 50%;
+    }
+
+    .timeline-item::after {
+      content: '';
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      right: -17px;
+      background-color: var(--bg-light);
+      border: 4px solid var(--primary);
+      top: 15px;
+      border-radius: 50%;
+      z-index: 1;
+    }
+
+    .left {
+      left: 0;
+    }
+
+    .right {
+      left: 50%;
+    }
+
+    .left::before {
+      content: " ";
+      height: 0;
+      position: absolute;
+      top: 22px;
+      width: 0;
+      z-index: 1;
+      right: 30px;
+      border: medium solid var(--primary);
+      border-width: 10px 0 10px 10px;
+      border-color: transparent transparent transparent var(--primary);
+    }
+
+    .right::before {
+      content: " ";
+      height: 0;
+      position: absolute;
+      top: 22px;
+      width: 0;
+      z-index: 1;
+      left: 30px;
+      border: medium solid var(--primary);
+      border-width: 10px 10px 10px 0;
+      border-color: transparent var(--primary) transparent transparent;
+    }
+
+    .right::after {
+      left: -16px;
+    }
+
+    .content {
+      padding: 20px 30px;
+      background-color: white;
+      position: relative;
+      border-radius: 6px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    body.dark .content {
+      background-color: #2a2a2a;
+      color: var(--text-dark);
+    }
+
     @media (max-width: 768px) {
       nav { flex-direction: column; gap: 10px; }
       header h1 { font-size: 2rem; }
+      .timeline-item {
+        left: 0;
+        padding-left: 30px;
+        padding-right: 30px;
+        width: 100%;
+      }
+      .timeline::after {
+        left: 31px;
+      }
+      .left::before, .right::before, .left::after, .right::after {
+        display: none;
+      }
     }
   </style>
 </head>
@@ -150,6 +261,7 @@
     <a href="#certifications">📜 Certifications</a>
     <a href="#skills">💻 Compétences</a>
     <a href="#contact">📬 Contact</a>
+    <a href="#timeline">📅 Parcours</a>
   </nav>
   <div class="container">
     <section id="apropos" class="section">
@@ -176,14 +288,61 @@
     <section id="skills" class="section">
       <h2>💻 Compétences techniques</h2>
       <div class="skills-list">
-        <div class="skill"><i class="fab fa-linux"></i> Linux / Debian</div>
-        <div class="skill"><i class="fas fa-cloud"></i> Virtualisation (VMware / Proxmox)</div>
-        <div class="skill"><i class="fas fa-network-wired"></i> Réseaux TCP/IP</div>
-        <div class="skill"><i class="fas fa-shield-alt"></i> Pare-feu & Sécurité</div>
-        <div class="skill"><i class="fas fa-server"></i> Active Directory / DNS / DHCP</div>
-        <div class="skill"><i class="fas fa-terminal"></i> PowerShell / Bash</div>
-        <div class="skill"><i class="fab fa-git-alt"></i> Git / GitHub</div>
-        <div class="skill"><i class="fab fa-html5"></i> HTML / CSS / JS</div>
+        <div class="skill">🐧 Linux / Debian</div>
+        <div class="skill">☁️ Virtualisation (VMware / Proxmox)</div>
+        <div class="skill">🌐 Réseaux TCP/IP</div>
+        <div class="skill">🔒 Pare-feu & Sécurité</div>
+        <div class="skill">📂 Active Directory / DNS / DHCP</div>
+        <div class="skill">💻 PowerShell / Bash</div>
+        <div class="skill">🐙 Git / GitHub</div>
+        <div class="skill">💻 HTML / CSS / JS</div>
+      </div>
+    </section>
+    <section id="timeline" class="section">
+      <h2>📅 Mon Parcours</h2>
+      <div class="timeline">
+        <div class="timeline-item left">
+          <div class="content">
+            <h3>H3 Campus</h3>
+            <p>2024-2026</p>
+            <p>Études en BTS SIO SISR.</p>
+          </div>
+        </div>
+        <div class="timeline-item right">
+          <div class="content">
+            <h3>Lycée Jean Perrin</h3>
+            <p>2021-2023</p>
+            <p>Études secondaires.</p>
+          </div>
+        </div>
+        <div class="timeline-item left">
+          <div class="content">
+            <h3>Collège la Taillette</h3>
+            <p>2017-2021</p>
+            <p>Études collégiales.</p>
+          </div>
+        </div>
+        <div class="timeline-item right">
+          <div class="content">
+            <h3>Stagiaire | Ministère de l'Intérieur DGPN Paris</h3>
+            <p>Février - Avril 2024</p>
+            <p>Intervention sur les PC utilisateurs, préparation de profils utilisateurs, installation et configuration de VPN.</p>
+          </div>
+        </div>
+        <div class="timeline-item left">
+          <div class="content">
+            <h3>Stagiaire | Spandex Bièvres</h3>
+            <p>Novembre 2023 - Janvier 2024</p>
+            <p>Projet de sécurisation des locaux et système d'accès biométriques.</p>
+          </div>
+        </div>
+        <div class="timeline-item right">
+          <div class="content">
+            <h3>Stagiaire | Orange Paris</h3>
+            <p>Avril - Mai 2022</p>
+            <p>Accompagnement d'un salarié, découverte des métiers proposés par Orange, aide à la résolution des tickets.</p>
+          </div>
+        </div>
       </div>
     </section>
     <section id="contact" class="section">
@@ -194,13 +353,23 @@
         <textarea name="message" rows="6" placeholder="Votre message" required></textarea>
         <button type="submit">Envoyer le message</button>
       </form>
+      <div class="badges">
+        <div class="badge">
+          <a href="https://github.com/votre-utilisateur" target="_blank">
+            <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Badge"/>
+          </a>
+        </div>
+        <div class="badge">
+          <img src="https://img.shields.io/badge/Formspree-Fonctionnel-brightgreen" alt="Formspree Badge"/>
+        </div>
+      </div>
     </section>
   </div>
   <footer>
     © 2025 Fares - Portfolio BTS SIO SISR. Tous droits réservés.
     <div class="social-links">
       <a href="https://www.linkedin.com/in/fares-elaissaoui/" target="_blank" class="social-link">
-        <i class="fab fa-linkedin"></i>
+        🔗 LinkedIn
       </a>
     </div>
   </footer>
