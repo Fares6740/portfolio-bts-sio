@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio BTS SIO SISR</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/scrollreveal"></script>
   <style>
     :root {
       --bg-light: #f8fbfd;
@@ -268,17 +269,19 @@
 </head>
 <body>
   <button class="toggle-mode" onclick="toggleDarkMode()">🌙 / ☀️</button>
-  <header><h1>Portfolio BTS SIO - Option SISR</h1></header>
-  <nav>
-    <a href="#apropos">🧑‍💼 À propos</a>
-    <a href="#cv">📄 CV</a>
-    <a href="#realisations-pro">🛠️ Réalisations Professionnelles</a>
-    <a href="#realisations-formation">🎓 Réalisations en Formation</a>
-    <a href="#certifications">📜 Certifications</a>
-    <a href="#skills">💻 Compétences</a>
-    <a href="#contact">📬 Contact</a>
-    <a href="#timeline">📅 Parcours</a>
-  </nav>
+  <header>
+    <h1>Portfolio BTS SIO - Option SISR</h1>
+    <nav>
+      <a href="#apropos">🧑‍💼 À propos</a>
+      <a href="#cv">📄 CV</a>
+      <a href="#realisations-pro">🛠️ Réalisations Professionnelles</a>
+      <a href="#realisations-formation">🎓 Réalisations en Formation</a>
+      <a href="#certifications">📜 Certifications</a>
+      <a href="#skills">💻 Compétences</a>
+      <a href="#contact">📬 Contact</a>
+      <a href="#timeline">📅 Parcours</a>
+    </nav>
+  </header>
   <div class="container">
     <section id="apropos" class="section">
       <h2>🧑‍💼 À propos de moi</h2>
@@ -388,6 +391,18 @@
     </div>
   </footer>
   <script>
+    // Initialiser ScrollReveal
+    window.sr = ScrollReveal();
+
+    // Configurer ScrollReveal
+    sr.reveal('.section', {
+      duration: 1000,
+      origin: 'bottom',
+      distance: '20px',
+      easing: 'ease-out',
+      reset: true
+    });
+
     // Fonction pour basculer le mode sombre
     function toggleDarkMode() {
       document.body.classList.toggle('dark');
