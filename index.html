@@ -1,57 +1,12 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Fares Elaissaoui - Expert SISR, spécialiste en systèmes et réseaux, infrastructure IT et sécurité. Portfolio professionnel et projets." />
-  <meta name="keywords" content="SISR, systèmes, réseaux, infrastructure, sécurité, virtualisation, Linux, Windows Server" />
-  <meta name="author" content="Fares Elaissaoui" />
-  
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://fares-elaissaoui.dev/" />
-  <meta property="og:title" content="Fares Elaissaoui - Expert SISR" />
-  <meta property="og:description" content="Spécialiste en infrastructure IT, systèmes et réseaux. Découvrez mon parcours et mes projets." />
-  <meta property="og:image" content="https://fares-elaissaoui.dev/og-image.jpg" />
-
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image" />
-  <meta property="twitter:url" content="https://fares-elaissaoui.dev/" />
-  <meta property="twitter:title" content="Fares Elaissaoui - Expert SISR" />
-  <meta property="twitter:description" content="Spécialiste en infrastructure IT, systèmes et réseaux. Découvrez mon parcours et mes projets." />
-  <meta property="twitter:image" content="https://fares-elaissaoui.dev/og-image.jpg" />
-
-  <title>Fares Elaissaoui - Expert SISR</title>
-  
-  <!-- Preload critical fonts -->
-  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"></noscript>
-  
+  <title>Fares Elaissaoui - Etudiant</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet" />
-  
-  <!-- Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Fares Elaissaoui",
-    "jobTitle": "Expert SISR - Spécialiste Systèmes et Réseaux",
-    "description": "Étudiant BTS SIO SISR spécialisé en infrastructure IT, virtualisation et sécurité réseau",
-    "url": "https://fares-elaissaoui.dev",
-    "sameAs": [
-      "https://www.linkedin.com/in/fares-elaissaoui/",
-      "https://github.com/Fares6740"
-    ],
-    "knowsAbout": ["Linux", "Windows Server", "Virtualisation", "Réseaux", "Sécurité IT", "Active Directory"],
-    "address": {
-      "@type": "PostalAddress",
-      "addressRegion": "Île-de-France",
-      "addressCountry": "FR"
-    }
-  }
-  </script>
-
   <style>
     :root {
       --primary: #6366f1;
@@ -109,81 +64,9 @@
       color: var(--text-dark);
     }
 
-    /* ===== SKIP LINKS ===== */
-    .skip-link {
-      position: absolute;
-      top: -40px;
-      left: 6px;
-      background: var(--primary);
-      color: white;
-      padding: 8px;
-      text-decoration: none;
-      border-radius: 4px;
-      z-index: 10000;
-      font-weight: 600;
-    }
-
-    .skip-link:focus {
-      top: 6px;
-    }
-
-    /* ===== LANGUAGE TOGGLE ===== */
-    .language-toggle {
-      position: fixed;
-      top: 2rem;
-      left: 2rem;
-      display: flex;
-      gap: 0.5rem;
-      z-index: 1001;
-    }
-
-    .lang-btn {
-      padding: 0.5rem 1rem;
-      background: rgba(255, 255, 255, 0.1);
-      backdrop-filter: blur(10px);
-      border: 1px solid rgba(255, 255, 255, 0.2);
-      border-radius: 25px;
-      color: white;
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 0.9rem;
-      transition: var(--transition);
-    }
-
-    .lang-btn.active {
-      background: var(--primary);
-    }
-
-    /* ===== SCROLL PROGRESS ===== */
-    .scroll-progress {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 0%;
-      height: 4px;
-      background: linear-gradient(90deg, var(--primary), var(--secondary), var(--accent));
-      z-index: 9999;
-      transition: width 0.3s ease;
-    }
-
-    /* ===== LOADING SKELETON ===== */
-    .skeleton {
-      background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
-      background-size: 200% 100%;
-      animation: loading 1.5s infinite;
-    }
-
-    body.dark .skeleton {
-      background: linear-gradient(90deg, #2a2a2a 25%, #3a3a3a 50%, #2a2a2a 75%);
-      background-size: 200% 100%;
-    }
-
-    @keyframes loading {
-      0% { background-position: 200% 0; }
-      100% { background-position: -200% 0; }
-    }
-
-    /* ===== MESH GRADIENT BACKGROUND ===== */
+    /* ===== EFFETS VISUELS AVANCÉS ===== */
+    
+    /* Mesh Gradient Background */
     .mesh-background {
       position: fixed;
       top: 0;
@@ -204,7 +87,7 @@
       50% { transform: scale(1.1) rotate(2deg); }
     }
 
-    /* ===== PARTICLES 3D ===== */
+    /* Particles 3D */
     .particles-3d {
       position: fixed;
       top: 0;
@@ -237,7 +120,7 @@
       }
     }
 
-    /* ===== CURSOR TRAIL ===== */
+    /* Cursor Trail */
     .cursor-trail {
       position: fixed;
       width: 20px;
@@ -250,7 +133,154 @@
       transition: opacity 0.3s ease;
     }
 
-    /* ===== NAVIGATION ENHANCED ===== */
+    /* ===== HEADER PREMIUM ===== */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: 
+        linear-gradient(45deg, transparent 30%, rgba(255, 255, 255, 0.1) 50%, transparent 70%),
+        linear-gradient(-45deg, transparent 30%, rgba(255, 255, 255, 0.05) 50%, transparent 70%);
+      animation: shimmer 3s ease-in-out infinite;
+    }
+
+    @keyframes shimmer {
+      0%, 100% { opacity: 0; }
+      50% { opacity: 1; }
+    }
+
+    .hero-content {
+      text-align: center;
+      color: white;
+      z-index: 2;
+      position: relative;
+      max-width: 800px;
+      padding: 0 2rem;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.75rem 1.5rem;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 50px;
+      backdrop-filter: blur(10px);
+      margin-bottom: 2rem;
+      animation: slideDown 1s ease-out;
+    }
+
+    .hero h1 {
+      font-size: clamp(3rem, 8vw, 6rem);
+      font-weight: 800;
+      margin-bottom: 1rem;
+      background: linear-gradient(45deg, #fff, #e2e8f0, #fff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      animation: slideUp 1s ease-out 0.2s both;
+    }
+
+    .hero-subtitle {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      opacity: 0.9;
+      animation: slideUp 1s ease-out 0.4s both;
+    }
+
+    .hero-description {
+      font-size: 1.1rem;
+      opacity: 0.8;
+      margin-bottom: 3rem;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      animation: slideUp 1s ease-out 0.6s both;
+    }
+
+    .hero-cta {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      animation: slideUp 1s ease-out 0.8s both;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 1rem 2rem;
+      border-radius: var(--border-radius-small);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: var(--transition);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: white;
+      box-shadow: 0 10px 30px rgba(99, 102, 241, 0.4);
+    }
+
+    .btn-secondary {
+      background: rgba(255, 255, 255, 0.1);
+      color: white;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(10px);
+    }
+
+    .btn::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+      transition: left 0.6s;
+    }
+
+    .btn:hover::before {
+      left: 100%;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px) scale(1.05);
+    }
+
+    .btn-primary:hover {
+      box-shadow: 0 15px 40px rgba(99, 102, 241, 0.6);
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-30px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes slideUp {
+      from { transform: translateY(30px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    /* ===== NAVIGATION FUTURISTE ===== */
     .navbar {
       position: fixed;
       top: 2rem;
@@ -316,208 +346,7 @@
       color: white;
     }
 
-    /* ===== MOBILE MENU ===== */
-    .mobile-menu-toggle {
-      display: none;
-      background: none;
-      border: none;
-      color: white;
-      font-size: 1.5rem;
-      cursor: pointer;
-      padding: 0.5rem;
-    }
-
-    .navbar.scrolled .mobile-menu-toggle {
-      color: var(--text-light);
-    }
-
-    body.dark .navbar.scrolled .mobile-menu-toggle {
-      color: var(--text-dark);
-    }
-
-    /* ===== HERO ENHANCED ===== */
-    .hero {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: relative;
-      overflow: hidden;
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
-    }
-
-    .hero::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: 
-        linear-gradient(45deg, transparent 30%, rgba(255, 255, 255, 0.1) 50%, transparent 70%),
-        linear-gradient(-45deg, transparent 30%, rgba(255, 255, 255, 0.05) 50%, transparent 70%);
-      animation: shimmer 3s ease-in-out infinite;
-    }
-
-    @keyframes shimmer {
-      0%, 100% { opacity: 0; }
-      50% { opacity: 1; }
-    }
-
-    .hero-content {
-      text-align: center;
-      color: white;
-      z-index: 2;
-      position: relative;
-      max-width: 800px;
-      padding: 0 2rem;
-    }
-
-    .hero-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      padding: 0.75rem 1.5rem;
-      background: rgba(255, 255, 255, 0.1);
-      border: 1px solid rgba(255, 255, 255, 0.2);
-      border-radius: 50px;
-      backdrop-filter: blur(10px);
-      margin-bottom: 2rem;
-      animation: slideDown 1s ease-out;
-    }
-
-    .hero h1 {
-      font-size: clamp(3rem, 8vw, 6rem);
-      font-weight: 800;
-      margin-bottom: 1rem;
-      background: linear-gradient(45deg, #fff, #e2e8f0, #fff);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      animation: slideUp 1s ease-out 0.2s both;
-    }
-
-    .typewriter {
-      overflow: hidden;
-      border-right: 3px solid;
-      white-space: nowrap;
-      animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
-    }
-
-    @keyframes typing {
-      from { width: 0; }
-      to { width: 100%; }
-    }
-
-    @keyframes blink-caret {
-      from, to { border-color: transparent; }
-      50% { border-color: white; }
-    }
-
-    .hero-subtitle {
-      font-size: 1.5rem;
-      margin-bottom: 1rem;
-      opacity: 0.9;
-      animation: slideUp 1s ease-out 0.4s both;
-    }
-
-    .hero-description {
-      font-size: 1.1rem;
-      opacity: 0.8;
-      margin-bottom: 3rem;
-      max-width: 600px;
-      margin-left: auto;
-      margin-right: auto;
-      animation: slideUp 1s ease-out 0.6s both;
-    }
-
-    .hero-cta {
-      display: flex;
-      gap: 1rem;
-      justify-content: center;
-      flex-wrap: wrap;
-      animation: slideUp 1s ease-out 0.8s both;
-    }
-
-    .hero-stats {
-      display: flex;
-      justify-content: center;
-      gap: 3rem;
-      margin-top: 3rem;
-      animation: slideUp 1s ease-out 1s both;
-    }
-
-    .stat-item {
-      text-align: center;
-    }
-
-    .stat-number {
-      font-size: 2.5rem;
-      font-weight: 800;
-      display: block;
-      margin-bottom: 0.5rem;
-      color: var(--accent);
-    }
-
-    .stat-label {
-      font-size: 0.9rem;
-      opacity: 0.8;
-    }
-
-    /* ===== BUTTONS ENHANCED ===== */
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.75rem;
-      padding: 1rem 2rem;
-      border-radius: var(--border-radius-small);
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 1rem;
-      transition: var(--transition);
-      position: relative;
-      overflow: hidden;
-      border: none;
-      cursor: pointer;
-    }
-
-    .btn-primary {
-      background: linear-gradient(135deg, var(--primary), var(--secondary));
-      color: white;
-      box-shadow: 0 10px 30px rgba(99, 102, 241, 0.4);
-    }
-
-    .btn-secondary {
-      background: rgba(255, 255, 255, 0.1);
-      color: white;
-      border: 1px solid rgba(255, 255, 255, 0.2);
-      backdrop-filter: blur(10px);
-    }
-
-    .btn::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: -100%;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-      transition: left 0.6s;
-    }
-
-    .btn:hover::before {
-      left: 100%;
-    }
-
-    .btn:hover {
-      transform: translateY(-3px) scale(1.05);
-    }
-
-    .btn-primary:hover {
-      box-shadow: 0 15px 40px rgba(99, 102, 241, 0.6);
-    }
-
-    /* ===== SECTIONS ENHANCED ===== */
+    /* ===== SECTIONS PREMIUM ===== */
     .container {
       max-width: 1400px;
       margin: 0 auto;
@@ -572,7 +401,7 @@
       color: var(--text-dark-secondary);
     }
 
-    /* ===== CARDS ENHANCED ===== */
+    /* ===== CARDS PREMIUM ===== */
     .card {
       background: var(--bg-light);
       border-radius: var(--border-radius);
@@ -614,7 +443,7 @@
       box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -2px rgba(0, 0, 0, 0.3);
     }
 
-    /* ===== GRIDS ===== */
+    /* ===== GRILLES AVANCÉES ===== */
     .grid {
       display: grid;
       gap: 2rem;
@@ -624,7 +453,7 @@
     .grid-3 { grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); }
     .grid-4 { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
 
-    /* ===== SKILLS ENHANCED ===== */
+    /* ===== COMPÉTENCES AVANCÉES ===== */
     .skills-category {
       margin-bottom: 3rem;
     }
@@ -720,7 +549,7 @@
       transition: width 2s ease-out;
     }
 
-    /* ===== TIMELINE ENHANCED ===== */
+    /* ===== TIMELINE FUTURISTE ===== */
     .timeline {
       position: relative;
       padding: 2rem 0;
@@ -742,7 +571,6 @@
       position: relative;
       width: 50%;
       margin-bottom: 4rem;
-      cursor: pointer;
     }
 
     .timeline-item.left {
@@ -831,179 +659,7 @@
       color: var(--text-dark-secondary);
     }
 
-    /* ===== PROJECTS ENHANCED ===== */
-    .project-card {
-      background: var(--bg-light);
-      border-radius: var(--border-radius);
-      overflow: hidden;
-      box-shadow: var(--shadow-light);
-      transition: var(--transition);
-      border: 1px solid rgba(99, 102, 241, 0.1);
-    }
-
-    body.dark .project-card {
-      background: var(--bg-dark-secondary);
-      border-color: rgba(99, 102, 241, 0.2);
-    }
-
-    .project-preview {
-      position: relative;
-      height: 200px;
-      background: linear-gradient(135deg, var(--primary), var(--secondary));
-      overflow: hidden;
-    }
-
-    .project-preview img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: var(--transition);
-    }
-
-    .project-overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.7);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      opacity: 0;
-      transition: var(--transition);
-    }
-
-    .project-card:hover .project-overlay {
-      opacity: 1;
-    }
-
-    .project-actions {
-      display: flex;
-      gap: 1rem;
-    }
-
-    .btn-icon {
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      background: var(--primary);
-      color: white;
-      border: none;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.2rem;
-      cursor: pointer;
-      transition: var(--transition);
-    }
-
-    .btn-icon:hover {
-      background: var(--secondary);
-      transform: scale(1.1);
-    }
-
-    .project-info {
-      padding: 1.5rem;
-    }
-
-    .project-tags {
-      display: flex;
-      gap: 0.5rem;
-      margin-bottom: 1rem;
-      flex-wrap: wrap;
-    }
-
-    .tag {
-      padding: 0.25rem 0.75rem;
-      background: rgba(99, 102, 241, 0.1);
-      color: var(--primary);
-      border-radius: 15px;
-      font-size: 0.8rem;
-      font-weight: 600;
-    }
-
-    body.dark .tag {
-      background: rgba(99, 102, 241, 0.2);
-    }
-
-    /* ===== TESTIMONIALS SECTION ===== */
-    .testimonials-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-      gap: 2rem;
-    }
-
-    .testimonial-card {
-      background: var(--bg-light);
-      padding: 2rem;
-      border-radius: var(--border-radius);
-      box-shadow: var(--shadow-light);
-      border: 1px solid rgba(99, 102, 241, 0.1);
-      transition: var(--transition);
-    }
-
-    body.dark .testimonial-card {
-      background: var(--bg-dark-secondary);
-      border-color: rgba(99, 102, 241, 0.2);
-    }
-
-    .testimonial-card:hover {
-      transform: translateY(-5px);
-      box-shadow: var(--shadow-medium);
-    }
-
-    .testimonial-quote {
-      font-style: italic;
-      font-size: 1.1rem;
-      margin-bottom: 1.5rem;
-      position: relative;
-    }
-
-    .testimonial-quote::before {
-      content: '"';
-      font-size: 4rem;
-      color: var(--primary);
-      position: absolute;
-      top: -1rem;
-      left: -1rem;
-      opacity: 0.3;
-    }
-
-    .testimonial-author {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-    }
-
-    .author-avatar {
-      width: 60px;
-      height: 60px;
-      border-radius: 50%;
-      background: linear-gradient(135deg, var(--primary), var(--secondary));
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      font-weight: 700;
-      font-size: 1.5rem;
-    }
-
-    .author-info h4 {
-      font-weight: 600;
-      margin-bottom: 0.25rem;
-    }
-
-    .author-info p {
-      color: var(--text-light-secondary);
-      font-size: 0.9rem;
-    }
-
-    body.dark .author-info p {
-      color: var(--text-dark-secondary);
-    }
-
-    /* ===== CONTACT ENHANCED ===== */
+    /* ===== CONTACT PREMIUM ===== */
     .contact-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -1086,7 +742,7 @@
       box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.1);
     }
 
-    /* ===== FOOTER ENHANCED ===== */
+    /* ===== FOOTER PREMIUM ===== */
     .footer {
       background: var(--bg-dark);
       color: var(--text-dark);
@@ -1135,7 +791,7 @@
       box-shadow: 0 10px 30px rgba(99, 102, 241, 0.4);
     }
 
-    /* ===== THEME TOGGLE ENHANCED ===== */
+    /* ===== THEME TOGGLE PREMIUM ===== */
     .theme-toggle {
       position: fixed;
       top: 2rem;
@@ -1168,40 +824,7 @@
       color: white;
     }
 
-    /* ===== BREADCRUMB ===== */
-    .breadcrumb {
-      position: fixed;
-      bottom: 2rem;
-      left: 2rem;
-      display: flex;
-      gap: 0.5rem;
-      z-index: 1000;
-      background: rgba(255, 255, 255, 0.1);
-      backdrop-filter: blur(10px);
-      padding: 0.5rem 1rem;
-      border-radius: 25px;
-      border: 1px solid rgba(255, 255, 255, 0.2);
-    }
-
-    body.dark .breadcrumb {
-      background: rgba(0, 0, 0, 0.2);
-    }
-
-    .breadcrumb-item {
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
-      background: rgba(255, 255, 255, 0.3);
-      transition: var(--transition);
-      cursor: pointer;
-    }
-
-    .breadcrumb-item.active {
-      background: var(--primary);
-      transform: scale(1.2);
-    }
-
-    /* ===== ANIMATIONS ADVANCED ===== */
+    /* ===== ANIMATIONS AVANCÉES ===== */
     .fade-in {
       opacity: 0;
       transform: translateY(50px);
@@ -1246,90 +869,38 @@
       transform: scale(1);
     }
 
-    /* ===== MODAL ===== */
-    .modal {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.8);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      z-index: 10000;
-      opacity: 0;
-      visibility: hidden;
-      transition: var(--transition);
-    }
+    /* ===== RESPONSIVE PREMIUM ===== */
+    @media (max-width: 768px) {
+      .navbar {
+        position: fixed;
+        top: auto;
+        bottom: 2rem;
+        left: 2rem;
+        right: 2rem;
+        transform: none;
+        border-radius: var(--border-radius);
+        padding: 1rem;
+      }
 
-    .modal.active {
-      opacity: 1;
-      visibility: visible;
-    }
+      .nav-links {
+        gap: 1rem;
+        justify-content: space-around;
+      }
 
-    .modal-content {
-      background: var(--bg-light);
-      border-radius: var(--border-radius);
-      padding: 2rem;
-      max-width: 600px;
-      width: 90%;
-      max-height: 80%;
-      overflow-y: auto;
-      position: relative;
-      transform: scale(0.8);
-      transition: var(--transition);
-    }
+      .nav-link {
+        padding: 0.75rem;
+        border-radius: var(--border-radius-small);
+        font-size: 0.9rem;
+      }
 
-    body.dark .modal-content {
-      background: var(--bg-dark-secondary);
-    }
+      .hero h1 {
+        font-size: 3rem;
+      }
 
-    .modal.active .modal-content {
-      transform: scale(1);
-    }
+      .grid-2, .grid-3, .grid-4 {
+        grid-template-columns: 1fr;
+      }
 
-    .modal-close {
-      position: absolute;
-      top: 1rem;
-      right: 1rem;
-      background: none;
-      border: none;
-      font-size: 2rem;
-      cursor: pointer;
-      color: var(--text-light-secondary);
-      transition: var(--transition);
-    }
-
-    body.dark .modal-close {
-      color: var(--text-dark-secondary);
-    }
-
-    .modal-close:hover {
-      color: var(--danger);
-      transform: scale(1.1);
-    }
-
-    /* ===== CHARTS & GRAPHS ===== */
-    .chart-container {
-      position: relative;
-      height: 300px;
-      margin: 2rem 0;
-    }
-
-    .progress-ring {
-      width: 120px;
-      height: 120px;
-    }
-
-    .progress-ring__circle {
-      transition: stroke-dasharray 0.35s;
-      transform: rotate(-90deg);
-      transform-origin: 50% 50%;
-    }
-
-    /* ===== RESPONSIVE ENHANCED ===== */
-    @media (max-width: 1024px) {
       .timeline::before {
         left: 2rem;
       }
@@ -1351,110 +922,22 @@
         grid-template-columns: 1fr;
         gap: 2rem;
       }
-    }
 
-    @media (max-width: 768px) {
-      .navbar {
-        position: fixed;
-        top: auto;
-        bottom: 2rem;
-        left: 2rem;
-        right: 2rem;
-        transform: none;
-        border-radius: var(--border-radius);
-        padding: 1rem;
-      }
-
-      .nav-links {
-        gap: 0.5rem;
-        justify-content: space-around;
-        flex-wrap: wrap;
-      }
-
-      .nav-link {
-        padding: 0.5rem;
-        border-radius: var(--border-radius-small);
-        font-size: 0.8rem;
-        text-align: center;
-        min-width: 60px;
-      }
-
-      .mobile-menu-toggle {
-        display: block;
-      }
-
-      .nav-links.mobile-hidden {
-        display: none;
-      }
-
-      .hero h1 {
-        font-size: 3rem;
-      }
-
-      .hero-stats {
+      .hero-cta {
         flex-direction: column;
-        gap: 1.5rem;
-      }
-
-      .grid-2, .grid-3, .grid-4 {
-        grid-template-columns: 1fr;
+        align-items: center;
       }
 
       .theme-toggle {
         top: auto;
-        bottom: 8rem;
+        bottom: 6rem;
         right: 2rem;
         width: 50px;
         height: 50px;
       }
-
-      .language-toggle {
-        top: auto;
-        bottom: 8rem;
-        left: 2rem;
-      }
-
-      .breadcrumb {
-        bottom: 14rem;
-      }
     }
 
-    /* ===== PRELOADER ===== */
-    .preloader {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(135deg, var(--primary), var(--secondary));
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      z-index: 10000;
-      transition: opacity 0.5s ease;
-    }
-
-    .preloader-content {
-      text-align: center;
-      color: white;
-    }
-
-    .spinner {
-      width: 60px;
-      height: 60px;
-      border: 4px solid rgba(255,255,255,0.3);
-      border-top: 4px solid white;
-      border-radius: 50%;
-      animation: spin 1s linear infinite;
-      margin: 0 auto 1rem;
-    }
-
-    @keyframes spin {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
-    }
-
-    /* ===== SPECIAL EFFECTS ===== */
+    /* ===== EFFETS SPÉCIAUX ===== */
     .glow {
       box-shadow: 0 0 30px rgba(99, 102, 241, 0.5);
     }
@@ -1476,81 +959,9 @@
       from { transform: rotate(0deg); }
       to { transform: rotate(360deg); }
     }
-
-    @keyframes slideDown {
-      from { transform: translateY(-30px); opacity: 0; }
-      to { transform: translateY(0); opacity: 1; }
-    }
-
-    @keyframes slideUp {
-      from { transform: translateY(30px); opacity: 0; }
-      to { transform: translateY(0); opacity: 1; }
-    }
-
-    /* ===== RIPPLE EFFECT ===== */
-    @keyframes ripple {
-      to {
-        transform: scale(2);
-        opacity: 0;
-      }
-    }
-
-    /* ===== RAINBOW EFFECT ===== */
-    @keyframes rainbow {
-      0% { filter: hue-rotate(0deg) saturate(1); }
-      25% { filter: hue-rotate(90deg) saturate(1.5); }
-      50% { filter: hue-rotate(180deg) saturate(2); }
-      75% { filter: hue-rotate(270deg) saturate(1.5); }
-      100% { filter: hue-rotate(360deg) saturate(1); }
-    }
-
-    /* ===== ACCESSIBILITY ===== */
-    @media (prefers-reduced-motion: reduce) {
-      *, *::before, *::after {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-      }
-    }
-
-    .sr-only {
-      position: absolute;
-      width: 1px;
-      height: 1px;
-      padding: 0;
-      margin: -1px;
-      overflow: hidden;
-      clip: rect(0, 0, 0, 0);
-      white-space: nowrap;
-      border: 0;
-    }
-
-    /* ===== FOCUS STYLES ===== */
-    *:focus {
-      outline: 2px solid var(--primary);
-      outline-offset: 2px;
-    }
-
-    .btn:focus, .nav-link:focus {
-      outline-color: var(--accent);
-    }
   </style>
 </head>
 <body>
-  <!-- Skip Link -->
-  <a href="#main-content" class="skip-link">Aller au contenu principal</a>
-
-  <!-- Scroll Progress -->
-  <div class="scroll-progress" id="scrollProgress"></div>
-
-  <!-- Preloader -->
-  <div class="preloader" id="preloader" style="opacity: 1; visibility: visible;">
-    <div class="preloader-content">
-      <div class="spinner"></div>
-      <p style="font-size: 1.2rem; font-weight: 600;">Chargement du portfolio...</p>
-    </div>
-  </div>
-
   <!-- Mesh Background -->
   <div class="mesh-background"></div>
   
@@ -1560,709 +971,509 @@
   <!-- Cursor Trail -->
   <div class="cursor-trail" id="cursorTrail"></div>
 
-  <!-- Language Toggle -->
-  <div class="language-toggle">
-    <a href="#" class="lang-btn active" data-lang="fr">FR</a>
-    <a href="#" class="lang-btn" data-lang="en">EN</a>
-  </div>
-
   <!-- Theme Toggle -->
-  <button class="theme-toggle" onclick="toggleTheme()" aria-label="Basculer le thème">
+  <button class="theme-toggle" onclick="toggleTheme()">
     <i class="fas fa-moon" id="themeIcon"></i>
   </button>
 
-  <!-- Breadcrumb Navigation -->
-  <nav class="breadcrumb" id="breadcrumb" aria-label="Navigation par sections">
-    <div class="breadcrumb-item active" data-section="hero" title="Accueil"></div>
-    <div class="breadcrumb-item" data-section="about" title="À propos"></div>
-    <div class="breadcrumb-item" data-section="experience" title="Parcours"></div>
-    <div class="breadcrumb-item" data-section="skills" title="Compétences"></div>
-    <div class="breadcrumb-item" data-section="projects" title="Projets"></div>
-    <div class="breadcrumb-item" data-section="testimonials" title="Témoignages"></div>
-    <div class="breadcrumb-item" data-section="contact" title="Contact"></div>
-  </nav>
-
   <!-- Navigation -->
-  <nav class="navbar" id="navbar" role="navigation" aria-label="Navigation principale">
-    <button class="mobile-menu-toggle" onclick="toggleMobileMenu()" aria-label="Menu mobile">
-      <i class="fas fa-bars"></i>
-    </button>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="#hero" class="nav-link active" data-text="Accueil">Accueil</a></li>
-      <li><a href="#about" class="nav-link" data-text="À propos">À propos</a></li>
-      <li><a href="#experience" class="nav-link" data-text="Parcours">Parcours</a></li>
-      <li><a href="#skills" class="nav-link" data-text="Compétences">Compétences</a></li>
-      <li><a href="#projects" class="nav-link" data-text="Projets">Projets</a></li>
-      <li><a href="#testimonials" class="nav-link" data-text="Témoignages">Témoignages</a></li>
-      <li><a href="#contact" class="nav-link" data-text="Contact">Contact</a></li>
+  <nav class="navbar" id="navbar">
+    <ul class="nav-links">
+      <li><a href="#hero" class="nav-link active">Accueil</a></li>
+      <li><a href="#about" class="nav-link">À propos</a></li>
+      <li><a href="#experience" class="nav-link">Parcours</a></li>
+      <li><a href="#skills" class="nav-link">Compétences</a></li>
+      <li><a href="#projects" class="nav-link">Projets</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
     </ul>
   </nav>
 
-  <main id="main-content">
-    <!-- Hero Section -->
-    <section id="hero" class="hero">
-      <div class="hero-content">
-        <div class="hero-badge">
-          <i class="fas fa-rocket"></i>
-          <span data-text="Expert en Infrastructure IT">Expert en Infrastructure IT</span>
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <i class="fas fa-rocket"></i>
+        <span>Alternant au Ministére de l'intérieur</span>
+      </div>
+      <h1>Fares Elaissaoui</h1>
+      <p class="hero-subtitle">Étudiant BTS SIO SISR • Spécialiste Systèmes & Réseaux</p>
+      <p class="hero-description">
+        Passionné par l'administration système, la virtualisation et la sécurité réseau.</p>
+      <div class="hero-cta">
+        <a href="#contact" class="btn btn-primary">
+          <i class="fas fa-envelope"></i>
+          <span>Me contacter</span>
+        </a>
+        <a href="#projects" class="btn btn-secondary">
+          <i class="fas fa-eye"></i>
+          <span>Voir mes projets</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header fade-in">
+        <div class="section-badge">
+          <i class="fas fa-user"></i>
+          <span>Qui suis-je ?</span>
         </div>
-        <h1 class="typewriter" data-text="Fares Elaissaoui">Fares Elaissaoui</h1>
-        <p class="hero-subtitle" data-text="Étudiant BTS SIO SISR • Spécialiste Systèmes & Réseaux">Étudiant BTS SIO SISR • Spécialiste Systèmes & Réseaux</p>
-        <p class="hero-description" data-text="Passionné par l'administration système, la virtualisation et la sécurité réseau. Je développe des solutions techniques innovantes pour optimiser les infrastructures IT.">
-          Passionné par l'administration système, la virtualisation et la sécurité réseau. 
-          Je développe des solutions techniques innovantes pour optimiser les infrastructures IT.
+        <h2 class="section-title">À propos de moi</h2>
+        <p class="section-subtitle">
+          Découvrez mon parcours et ma passion pour les technologies de l'infrastructure
         </p>
-        <div class="hero-cta">
-          <a href="#contact" class="btn btn-primary">
-            <i class="fas fa-envelope"></i>
-            <span data-text="Me contacter">Me contacter</span>
-          </a>
-          <a href="#projects" class="btn btn-secondary">
-            <i class="fas fa-eye"></i>
-            <span data-text="Voir mes projets">Voir mes projets</span>
-          </a>
-        </div>
-        <div class="hero-stats">
-          <div class="stat-item">
-            <span class="stat-number" data-count="2">0</span>
-            <span class="stat-label" data-text="Années d'études">Années d'études</span>
-          </div>
-          <div class="stat-item">
-            <span class="stat-number" data-count="15">0</span>
-            <span class="stat-label" data-text="Projets réalisés">Projets réalisés</span>
-          </div>
-          <div class="stat-item">
-            <span class="stat-number" data-count="8">0</span>
-            <span class="stat-label" data-text="Technologies maîtrisées">Technologies maîtrisées</span>
-          </div>
-        </div>
       </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="section">
-      <div class="container">
-        <div class="section-header fade-in">
-          <div class="section-badge">
-            <i class="fas fa-user"></i>
-            <span data-text="Qui suis-je ?">Qui suis-je ?</span>
-          </div>
-          <h2 class="section-title" data-text="À propos de moi">À propos de moi</h2>
-          <p class="section-subtitle" data-text="Découvrez mon parcours et ma passion pour les technologies de l'infrastructure">
-            Découvrez mon parcours et ma passion pour les technologies de l'infrastructure
-          </p>
-        </div>
-        
-        <div class="grid grid-2">
-          <div class="card fade-in">
-            <div style="margin-bottom: 2rem;">
-              <div style="width: 80px; height: 80px; background: linear-gradient(135deg, var(--primary), var(--secondary)); border-radius: 20px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
-                <i class="fas fa-graduation-cap" style="font-size: 2rem; color: white;"></i>
-              </div>
-              <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1rem; color: var(--primary);" data-text="Formation">Formation</h3>
-              <p style="color: var(--text-light-secondary); margin-bottom: 1.5rem;" data-text="Actuellement en BTS SIO option SISR à H3 Campus, je me spécialise dans l'administration des systèmes et réseaux. Mon parcours m'a permis d'acquérir une expertise technique solide.">
-                Actuellement en BTS SIO option SISR à H3 Campus, je me spécialise dans l'administration 
-                des systèmes et réseaux. Mon parcours m'a permis d'acquérir une expertise technique solide.
-              </p>
-              <a href="https://drive.google.com/file/d/1myqVThm8p_t2KsLXEJNxRaxAbWjMIVYD/view?usp=sharing" target="_blank" class="btn btn-primary">
-                <i class="fas fa-download"></i>
-                <span data-text="Télécharger mon CV">Télécharger mon CV</span>
-              </a>
+      
+      <div class="grid grid-2">
+        <div class="card fade-in">
+          <div style="margin-bottom: 2rem;">
+            <div style="width: 80px; height: 80px; background: linear-gradient(135deg, var(--primary), var(--secondary)); border-radius: 20px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+              <i class="fas fa-graduation-cap" style="font-size: 2rem; color: white;"></i>
             </div>
+            <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1rem; color: var(--primary);">Formation</h3>
+            <p style="color: var(--text-light-secondary); margin-bottom: 1.5rem;">
+              Actuellement en BTS SIO option SISR à H3 Campus, je me spécialise dans l'administration 
+              des systèmes et réseaux. Mon parcours m'a permis d'acquérir une expertise technique solide.
+            </p>
+            <a href="https://drive.google.com/file/d/1myqVThm8p_t2KsLXEJNxRaxAbWjMIVYD/view?usp=sharing" target="_blank" class="btn btn-primary">
+              <i class="fas fa-download"></i>
+              <span>Télécharger mon CV</span>
+            </a>
           </div>
+        </div>
 
-          <div class="card fade-in">
-            <div style="margin-bottom: 2rem;">
-              <div style="width: 80px; height: 80px; background: linear-gradient(135deg, var(--secondary), var(--accent)); border-radius: 20px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
-                <i class="fas fa-lightbulb" style="font-size: 2rem; color: white;"></i>
-              </div>
-              <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1rem; color: var(--primary);" data-text="Passion">Passion</h3>
-              <p style="color: var(--text-light-secondary); margin-bottom: 1.5rem;" data-text="Ma passion pour l'informatique se concentre sur l'optimisation des infrastructures, la sécurisation des réseaux et l'automatisation des processus administratifs.">
-                Ma passion pour l'informatique se concentre sur l'optimisation des infrastructures, 
-                la sécurisation des réseaux et l'automatisation des processus administratifs.
-              </p>
-              <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-                <span class="tag">Infrastructure</span>
-                <span class="tag">Sécurité</span>
-                <span class="tag">Virtualisation</span>
-              </div>
+        <div class="card fade-in">
+          <div style="margin-bottom: 2rem;">
+            <div style="width: 80px; height: 80px; background: linear-gradient(135deg, var(--secondary), var(--accent)); border-radius: 20px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+              <i class="fas fa-lightbulb" style="font-size: 2rem; color: white;"></i>
+            </div>
+            <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1rem; color: var(--primary);">Passion</h3>
+            <p style="color: var(--text-light-secondary); margin-bottom: 1.5rem;">
+              Ma passion pour l'informatique se concentre sur l'optimisation des infrastructures, 
+              la sécurisation des réseaux et l'automatisation des processus administratifs.
+            </p>
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+              <span style="padding: 0.5rem 1rem; background: rgba(99, 102, 241, 0.1); color: var(--primary); border-radius: 25px; font-weight: 600; font-size: 0.9rem;">Infrastructure</span>
+              <span style="padding: 0.5rem 1rem; background: rgba(99, 102, 241, 0.1); color: var(--primary); border-radius: 25px; font-weight: 600; font-size: 0.9rem;">Sécurité</span>
+              <span style="padding: 0.5rem 1rem; background: rgba(99, 102, 241, 0.1); color: var(--primary); border-radius: 25px; font-weight: 600; font-size: 0.9rem;">Virtualisation</span>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Experience Timeline -->
-    <section id="experience" class="section" style="background: var(--bg-light-secondary);">
-      <div class="container">
-        <div class="section-header fade-in">
-          <div class="section-badge">
-            <i class="fas fa-timeline"></i>
-            <span data-text="Mon parcours">Mon parcours</span>
+  <!-- Experience Timeline -->
+  <section id="experience" class="section" style="background: var(--bg-light-secondary);">
+    <div class="container">
+      <div class="section-header fade-in">
+        <div class="section-badge">
+          <i class="fas fa-timeline"></i>
+          <span>Mon parcours</span>
+        </div>
+        <h2 class="section-title">Expérience & Formation</h2>
+        <p class="section-subtitle">
+          Un parcours riche en expériences professionnelles et académiques
+        </p>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item left slide-in-left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">2024-2026</div>
+            <h3 class="timeline-title">BTS SIO SISR</h3>
+            <p class="timeline-company">H3 Campus</p>
+            <p>Formation complète en Solutions d'Infrastructure, Systèmes et Réseaux. Apprentissage des technologies modernes de virtualisation, sécurité et administration système.</p>
           </div>
-          <h2 class="section-title" data-text="Expérience & Formation">Expérience & Formation</h2>
-          <p class="section-subtitle" data-text="Un parcours riche en expériences professionnelles et académiques">
-            Un parcours riche en expériences professionnelles et académiques
-          </p>
         </div>
 
-        <div class="timeline">
-          <div class="timeline-item left slide-in-left" onclick="openModal('experience1')">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <div class="timeline-date">2024-2026</div>
-              <h3 class="timeline-title" data-text="BTS SIO SISR">BTS SIO SISR</h3>
-              <p class="timeline-company" data-text="H3 Campus">H3 Campus</p>
-              <p data-text="Formation complète en Solutions d'Infrastructure, Systèmes et Réseaux. Apprentissage des technologies modernes de virtualisation, sécurité et administration système.">Formation complète en Solutions d'Infrastructure, Systèmes et Réseaux. Apprentissage des technologies modernes de virtualisation, sécurité et administration système.</p>
-            </div>
+        <div class="timeline-item right slide-in-right">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">Février - Avril 2024</div>
+            <h3 class="timeline-title">Stagiaire IT</h3>
+            <p class="timeline-company">Ministère de l'Intérieur DGPN Paris</p>
+            <p>Intervention sur les PC utilisateurs, préparation de profils utilisateurs, installation et configuration de VPN, gestion de comptes Active Directory. Expérience en environnement gouvernemental sécurisé.</p>
           </div>
+        </div>
 
-          <div class="timeline-item right slide-in-right" onclick="openModal('experience2')">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <div class="timeline-date">Février - Avril 2024</div>
-              <h3 class="timeline-title" data-text="Stagiaire IT">Stagiaire IT</h3>
-              <p class="timeline-company" data-text="Ministère de l'Intérieur DGPN Paris">Ministère de l'Intérieur DGPN Paris</p>
-              <p data-text="Intervention sur les PC utilisateurs, préparation de profils utilisateurs, installation et configuration de VPN, gestion de comptes Active Directory. Expérience en environnement gouvernemental sécurisé.">Intervention sur les PC utilisateurs, préparation de profils utilisateurs, installation et configuration de VPN, gestion de comptes Active Directory. Expérience en environnement gouvernemental sécurisé.</p>
-            </div>
+        <div class="timeline-item left slide-in-left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">Novembre 2023 - Janvier 2024</div>
+            <h3 class="timeline-title">Technicien Sécurité</h3>
+            <p class="timeline-company">Spandex Bièvres</p>
+            <p>Projet de sécurisation des locaux avec installation d'un système d'accès biométrique. Gestion de la sécurité physique et logique des installations.</p>
           </div>
+        </div>
 
-          <div class="timeline-item left slide-in-left" onclick="openModal('experience3')">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <div class="timeline-date">Novembre 2023 - Janvier 2024</div>
-              <h3 class="timeline-title" data-text="Technicien Sécurité">Technicien Sécurité</h3>
-              <p class="timeline-company" data-text="Spandex Bièvres">Spandex Bièvres</p>
-              <p data-text="Projet de sécurisation des locaux avec installation d'un système d'accès biométrique. Gestion de la sécurité physique et logique des installations.">Projet de sécurisation des locaux avec installation d'un système d'accès biométrique. Gestion de la sécurité physique et logique des installations.</p>
-            </div>
+        <div class="timeline-item right slide-in-right">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">2021-2023</div>
+            <h3 class="timeline-title">Bac PRO SN ARED</h3>
+            <p class="timeline-company">Lycée Jean Perrin</p>
+            <p>Spécialisation en Audiovisuels, Réseau et Équipement Domestiques. Première approche des technologies réseau et des systèmes embarqués.</p>
           </div>
+        </div>
 
-          <div class="timeline-item right slide-in-right" onclick="openModal('experience4')">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <div class="timeline-date">2021-2023</div>
-              <h3 class="timeline-title" data-text="Bac PRO SN ARED">Bac PRO SN ARED</h3>
-              <p class="timeline-company" data-text="Lycée Jean Perrin">Lycée Jean Perrin</p>
-              <p data-text="Spécialisation en Audiovisuels, Réseau et Équipement Domestiques. Première approche des technologies réseau et des systèmes embarqués.">Spécialisation en Audiovisuels, Réseau et Équipement Domestiques. Première approche des technologies réseau et des systèmes embarqués.</p>
-            </div>
-          </div>
-
-          <div class="timeline-item left slide-in-left" onclick="openModal('experience5')">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <div class="timeline-date">Avril - Mai 2022</div>
-              <h3 class="timeline-title" data-text="Stagiaire Réseau">Stagiaire Réseau</h3>
-              <p class="timeline-company" data-text="Orange Paris">Orange Paris</p>
-              <p data-text="Accompagnement d'un salarié, découverte des métiers des télécommunications, aide à la résolution des tickets N+2, découverte du réseau FTTH et des infrastructures Orange.">Accompagnement d'un salarié, découverte des métiers des télécommunications, aide à la résolution des tickets N+2, découverte du réseau FTTH et des infrastructures Orange.</p>
-            </div>
+        <div class="timeline-item left slide-in-left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">Avril - Mai 2022</div>
+            <h3 class="timeline-title">Stagiaire Réseau</h3>
+            <p class="timeline-company">Orange Paris</p>
+            <p>Accompagnement d'un salarié, découverte des métiers des télécommunications, aide à la résolution des tickets N+2, découverte du réseau FTTH et des infrastructures Orange.</p>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="section">
-      <div class="container">
-        <div class="section-header fade-in">
-          <div class="section-badge">
-            <i class="fas fa-code"></i>
-            <span data-text="Expertise technique">Expertise technique</span>
-          </div>
-          <h2 class="section-title" data-text="Compétences">Compétences</h2>
-          <p class="section-subtitle" data-text="Maîtrise des technologies modernes d'infrastructure et de sécurité">
-            Maîtrise des technologies modernes d'infrastructure et de sécurité
-          </p>
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="section-header fade-in">
+        <div class="section-badge">
+          <i class="fas fa-code"></i>
+          <span>Expertise technique</span>
         </div>
-
-        <div class="grid grid-2">
-          <div class="card fade-in">
-            <div class="skills-category">
-              <h3 class="category-title">
-                <i class="fas fa-server"></i>
-                <span data-text="Systèmes & Administration">Systèmes & Administration</span>
-              </h3>
-              
-              <div class="skill-item">
-                <div class="skill-info">
-                  <div class="skill-icon">
-                    <i class="fab fa-linux"></i>
-                  </div>
-                  <div class="skill-details">
-                    <h4 data-text="Linux / Debian">Linux / Debian</h4>
-                    <p data-text="Administration avancée, scripts Bash">Administration avancée, scripts Bash</p>
-                  </div>
-                </div>
-                <div class="skill-level">
-                  <span class="skill-percentage">90%</span>
-                  <div class="skill-bar">
-                    <div class="skill-progress" data-width="90"></div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="skill-item">
-                <div class="skill-info">
-                  <div class="skill-icon">
-                    <i class="fas fa-cloud"></i>
-                  </div>
-                  <div class="skill-details">
-                    <h4 data-text="Virtualisation">Virtualisation</h4>
-                    <p data-text="VMware, Proxmox, Hyper-V">VMware, Proxmox, Hyper-V</p>
-                  </div>
-                </div>
-                <div class="skill-level">
-                  <span class="skill-percentage">85%</span>
-                  <div class="skill-bar">
-                    <div class="skill-progress" data-width="85"></div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="skill-item">
-                <div class="skill-info">
-                  <div class="skill-icon">
-                    <i class="fas fa-windows"></i>
-                  </div>
-                  <div class="skill-details">
-                    <h4 data-text="Active Directory">Active Directory</h4>
-                    <p data-text="Gestion utilisateurs, GPO, DNS/DHCP">Gestion utilisateurs, GPO, DNS/DHCP</p>
-                  </div>
-                </div>
-                <div class="skill-level">
-                  <span class="skill-percentage">88%</span>
-                  <div class="skill-bar">
-                    <div class="skill-progress" data-width="88"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="card fade-in">
-            <div class="skills-category">
-              <h3 class="category-title">
-                <i class="fas fa-network-wired"></i>
-                <span data-text="Réseaux & Sécurité">Réseaux & Sécurité</span>
-              </h3>
-              
-              <div class="skill-item">
-                <div class="skill-info">
-                  <div class="skill-icon">
-                    <i class="fas fa-network-wired"></i>
-                  </div>
-                  <div class="skill-details">
-                    <h4 data-text="Réseaux TCP/IP">Réseaux TCP/IP</h4>
-                    <p data-text="Configuration, routage, VLAN">Configuration, routage, VLAN</p>
-                  </div>
-                </div>
-                <div class="skill-level">
-                  <span class="skill-percentage">92%</span>
-                  <div class="skill-bar">
-                    <div class="skill-progress" data-width="92"></div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="skill-item">
-                <div class="skill-info">
-                  <div class="skill-icon">
-                    <i class="fas fa-shield-alt"></i>
-                  </div>
-                  <div class="skill-details">
-                    <h4 data-text="Sécurité & Pare-feu">Sécurité & Pare-feu</h4>
-                    <p data-text="PfSense, iptables, VPN">PfSense, iptables, VPN</p>
-                  </div>
-                </div>
-                <div class="skill-level">
-                  <span class="skill-percentage">80%</span>
-                  <div class="skill-bar">
-                    <div class="skill-progress" data-width="80"></div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="skill-item">
-                <div class="skill-info">
-                  <div class="skill-icon">
-                    <i class="fas fa-terminal"></i>
-                  </div>
-                  <div class="skill-details">
-                    <h4 data-text="Scripting">Scripting</h4>
-                    <p data-text="PowerShell, Bash, Python">PowerShell, Bash, Python</p>
-                  </div>
-                </div>
-                <div class="skill-level">
-                  <span class="skill-percentage">75%</span>
-                  <div class="skill-bar">
-                    <div class="skill-progress" data-width="75"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <h2 class="section-title">Compétences</h2>
+        <p class="section-subtitle">
+          Maîtrise des technologies modernes d'infrastructure et de sécurité
+        </p>
       </div>
-    </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="section" style="background: var(--bg-light-secondary);">
-      <div class="container">
-        <div class="section-header fade-in">
-          <div class="section-badge">
-            <i class="fas fa-folder-open"></i>
-            <span data-text="Mes réalisations">Mes réalisations</span>
-          </div>
-          <h2 class="section-title" data-text="Projets & Réalisations">Projets & Réalisations</h2>
-          <p class="section-subtitle" data-text="Découvrez mes projets professionnels et académiques">
-            Découvrez mes projets professionnels et académiques
-          </p>
-        </div>
-
-        <div class="grid grid-3">
-          <div class="project-card scale-in">
-            <div class="project-preview">
-              <div style="background: linear-gradient(135deg, var(--primary), var(--secondary)); height: 100%; display: flex; align-items: center; justify-content: center;">
-                <i class="fas fa-briefcase" style="font-size: 3rem; color: white;"></i>
-              </div>
-              <div class="project-overlay">
-                <div class="project-actions">
-                  <button class="btn-icon" onclick="window.open('https://drive.google.com/drive/folders/1R0gwz5do2gZqCLOkqn0Fb0nlLE1wniXf?usp=drive_link', '_blank')" title="Voir le projet">
-                    👁️
-                  </button>
-                  <button class="btn-icon" onclick="shareProject('Réalisations Professionnelles')" title="Partager">
-                    📤
-                  </button>
-                  <button class="btn-icon" onclick="openModal('project1')" title="Détails">
-                    📋
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="project-info">
-              <div class="project-tags">
-                <span class="tag">Stage</span>
-                <span class="tag">Professionnel</span>
-                <span class="tag">Infrastructure</span>
-              </div>
-              <h3 data-text="Réalisations Professionnelles">Réalisations Professionnelles</h3>
-              <p data-text="Projets et missions réalisés en entreprise, démontrant mes compétences pratiques en environnement professionnel.">Projets et missions réalisés en entreprise, démontrant mes compétences pratiques en environnement professionnel.</p>
-            </div>
-          </div>
-
-          <div class="project-card scale-in">
-            <div class="project-preview">
-              <div style="background: linear-gradient(135deg, var(--secondary), var(--accent)); height: 100%; display: flex; align-items: center; justify-content: center;">
-                <i class="fas fa-graduation-cap" style="font-size: 3rem; color: white;"></i>
-              </div>
-              <div class="project-overlay">
-                <div class="project-actions">
-                  <button class="btn-icon" onclick="window.open('https://drive.google.com/drive/folders/1dKBVK1qHl-ObvrDof8_-_TLIegPayhJ7?usp=drive_link', '_blank')" title="Voir le projet">
-                    👁️
-                  </button>
-                  <button class="btn-icon" onclick="shareProject('Réalisations Académiques')" title="Partager">
-                    📤
-                  </button>
-                  <button class="btn-icon" onclick="openModal('project2')" title="Détails">
-                    📋
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="project-info">
-              <div class="project-tags">
-                <span class="tag">BTS</span>
-                <span class="tag">Formation</span>
-                <span class="tag">Académique</span>
-              </div>
-              <h3 data-text="Réalisations Académiques">Réalisations Académiques</h3>
-              <p data-text="Travaux pratiques et projets étudiants réalisés durant ma formation BTS SIO SISR.">Travaux pratiques et projets étudiants réalisés durant ma formation BTS SIO SISR.</p>
-            </div>
-          </div>
-
-          <div class="project-card scale-in">
-            <div class="project-preview">
-              <div style="background: linear-gradient(135deg, var(--accent), var(--success)); height: 100%; display: flex; align-items: center; justify-content: center;">
-                <i class="fas fa-certificate" style="font-size: 3rem; color: white;"></i>
-              </div>
-              <div class="project-overlay">
-                <div class="project-actions">
-                  <button class="btn-icon" onclick="window.open('https://drive.google.com/drive/folders/1gX97jJW5LGQYaU5pusFFjXxP4jPWjknV?usp=drive_link', '_blank')" title="Voir le projet">
-                    👁️
-                  </button>
-                  <button class="btn-icon" onclick="shareProject('Certifications')" title="Partager">
-                    📤
-                  </button>
-                  <button class="btn-icon" onclick="openModal('project3')" title="Détails">
-                    📋
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="project-info">
-              <div class="project-tags">
-                <span class="tag">Certification</span>
-                <span class="tag">Expertise</span>
-                <span class="tag">Validation</span>
-              </div>
-              <h3 data-text="Certifications">Certifications</h3>
-              <p data-text="Certifications professionnelles attestant de mes compétences techniques et de ma montée en expertise.">Certifications professionnelles attestant de mes compétences techniques et de ma montée en expertise.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="section">
-      <div class="container">
-        <div class="section-header fade-in">
-          <div class="section-badge">
-            <i class="fas fa-quote-left"></i>
-            <span data-text="Ce qu'on dit de moi">Ce qu'on dit de moi</span>
-          </div>
-          <h2 class="section-title" data-text="Témoignages">Témoignages</h2>
-          <p class="section-subtitle" data-text="Retours de mes collègues et formateurs sur mes compétences">
-            Retours de mes collègues et formateurs sur mes compétences
-          </p>
-        </div>
-
-        <div class="testimonials-grid">
-          <div class="testimonial-card fade-in">
-            <div class="testimonial-quote" data-text="Fares fait preuve d'une grande autonomie et d'un excellent sens de l'analyse. Sa capacité à résoudre les problèmes techniques complexes est remarquable.">
-              "Fares fait preuve d'une grande autonomie et d'un excellent sens de l'analyse. Sa capacité à résoudre les problèmes techniques complexes est remarquable."
-            </div>
-            <div class="testimonial-author">
-              <div class="author-avatar">MT</div>
-              <div class="author-info">
-                <h4 data-text="Maître de stage">Maître de stage</h4>
-                <p data-text="Ministère de l'Intérieur DGPN">Ministère de l'Intérieur DGPN</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="testimonial-card fade-in">
-            <div class="testimonial-quote" data-text="Un étudiant sérieux et passionné qui montre une réelle aptitude pour les technologies système et réseau. Toujours curieux d'apprendre.">
-              "Un étudiant sérieux et passionné qui montre une réelle aptitude pour les technologies système et réseau. Toujours curieux d'apprendre."
-            </div>
-            <div class="testimonial-author">
-              <div class="author-avatar">FP</div>
-              <div class="author-info">
-                <h4 data-text="Formateur BTS SIO">Formateur BTS SIO</h4>
-                <p data-text="H3 Campus">H3 Campus</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="testimonial-card fade-in">
-            <div class="testimonial-quote" data-text="Fares a su s'adapter rapidement à notre environnement technique et a apporté des solutions innovantes lors de son stage.">
-              "Fares a su s'adapter rapidement à notre environnement technique et a apporté des solutions innovantes lors de son stage."
-            </div>
-            <div class="testimonial-author">
-              <div class="author-avatar">SB</div>
-              <div class="author-info">
-                <h4 data-text="Responsable IT">Responsable IT</h4>
-                <p data-text="Spandex Bièvres">Spandex Bièvres</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="section">
-      <div class="container">
-        <div class="section-header fade-in">
-          <div class="section-badge">
-            <i class="fas fa-envelope"></i>
-            <span data-text="Restons en contact">Restons en contact</span>
-          </div>
-          <h2 class="section-title" data-text="Contactez-moi">Contactez-moi</h2>
-          <p class="section-subtitle" data-text="N'hésitez pas à me contacter pour toute opportunité ou collaboration">
-            N'hésitez pas à me contacter pour toute opportunité ou collaboration
-          </p>
-        </div>
-
-        <div class="contact-grid">
-          <div class="contact-info fade-in">
-            <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 2rem; color: var(--primary);" data-text="Informations de contact">Informations de contact</h3>
+      <div class="grid grid-2">
+        <div class="card fade-in">
+          <div class="skills-category">
+            <h3 class="category-title">
+              <i class="fas fa-server"></i>
+              Systèmes & Administration
+            </h3>
             
-            <div class="contact-item">
-              <div class="contact-icon">
-                <i class="fas fa-envelope"></i>
+            <div class="skill-item">
+              <div class="skill-info">
+                <div class="skill-icon">
+                  <i class="fab fa-linux"></i>
+                </div>
+                <div class="skill-details">
+                  <h4>Linux / Debian</h4>
+                  <p>Administration avancée, scripts Bash</p>
+                </div>
               </div>
-              <div>
-                <h4 style="font-weight: 600; margin-bottom: 0.25rem;" data-text="Email">Email</h4>
-                <p style="color: var(--text-light-secondary);" data-text="Via le formulaire ci-contre">Via le formulaire ci-contre</p>
-              </div>
-            </div>
-
-            <div class="contact-item">
-              <div class="contact-icon">
-                <i class="fab fa-linkedin"></i>
-              </div>
-              <div>
-                <h4 style="font-weight: 600; margin-bottom: 0.25rem;" data-text="LinkedIn">LinkedIn</h4>
-                <a href="https://www.linkedin.com/in/fares-elaissaoui/" target="_blank" style="color: var(--primary); text-decoration: none;">fares-elaissaoui</a>
+              <div class="skill-level">
+                <span class="skill-percentage">30%</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="90"></div>
+                </div>
               </div>
             </div>
 
-            <div class="contact-item">
-              <div class="contact-icon">
-                <i class="fab fa-github"></i>
+            <div class="skill-item">
+              <div class="skill-info">
+                <div class="skill-icon">
+                  <i class="fas fa-cloud"></i>
+                </div>
+                <div class="skill-details">
+                  <h4>Virtualisation</h4>
+                  <p>VMware, VitualBox, Hyper-V</p>
+                </div>
               </div>
-              <div>
-                <h4 style="font-weight: 600; margin-bottom: 0.25rem;" data-text="GitHub">GitHub</h4>
-                <a href="https://github.com/Fares6740" target="_blank" style="color: var(--primary); text-decoration: none;">Fares6740</a>
-              </div>
-            </div>
-
-            <div class="contact-item">
-              <div class="contact-icon">
-                <i class="fas fa-map-marker-alt"></i>
-              </div>
-              <div>
-                <h4 style="font-weight: 600; margin-bottom: 0.25rem;" data-text="Localisation">Localisation</h4>
-                <p style="color: var(--text-light-secondary);" data-text="Île-de-France, France">Île-de-France, France</p>
+              <div class="skill-level">
+                <span class="skill-percentage">40%</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="85"></div>
+                </div>
               </div>
             </div>
 
-            <!-- Share buttons -->
-            <div style="margin-top: 2rem;">
-              <h4 style="font-weight: 600; margin-bottom: 1rem;" data-text="Partager mon portfolio">Partager mon portfolio</h4>
-              <div style="display: flex; gap: 1rem;">
-                <button class="btn-icon" onclick="sharePortfolio('twitter')" title="Partager sur Twitter">
-                  <i class="fab fa-twitter"></i>
-                </button>
-                <button class="btn-icon" onclick="sharePortfolio('linkedin')" title="Partager sur LinkedIn">
-                  <i class="fab fa-linkedin"></i>
-                </button>
-                <button class="btn-icon" onclick="sharePortfolio('email')" title="Partager par email">
-                  <i class="fas fa-envelope"></i>
-                </button>
-                <button class="btn-icon" onclick="copyLink()" title="Copier le lien">
-                  <i class="fas fa-link"></i>
-                </button>
+            <div class="skill-item">
+              <div class="skill-info">
+                <div class="skill-icon">
+                  <i class="fas fa-windows"></i>
+                </div>
+                <div class="skill-details">
+                  <h4>Active Directory</h4>
+                  <p>Gestion utilisateurs, GPO, DNS/DHCP</p>
+                </div>
+              </div>
+              <div class="skill-level">
+                <span class="skill-percentage">40%</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="88"></div>
+                </div>
               </div>
             </div>
           </div>
+        </div>
 
-          <div class="card fade-in">
-            <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 2rem; color: var(--primary);" data-text="Envoyez-moi un message">Envoyez-moi un message</h3>
+        <div class="card fade-in">
+          <div class="skills-category">
+            <h3 class="category-title">
+              <i class="fas fa-network-wired"></i>
+              Réseaux & Sécurité
+            </h3>
             
-            <form action="https://formspree.io/f/xovdrwba" method="POST" id="contactForm">
-              <div class="form-group">
-                <label for="name" class="form-label" data-text="Nom complet">Nom complet</label>
-                <input type="text" id="name" name="name" class="form-input" placeholder="Votre nom complet" required>
+            <div class="skill-item">
+              <div class="skill-info">
+                <div class="skill-icon">
+                  <i class="fas fa-network-wired"></i>
+                </div>
+                <div class="skill-details">
+                  <h4>Réseaux TCP/IP</h4>
+                  <p>Configuration, routage, VLAN</p>
+                </div>
               </div>
-
-              <div class="form-group">
-                <label for="email" class="form-label" data-text="Email">Email</label>
-                <input type="email" id="email" name="email" class="form-input" placeholder="votre.email@exemple.com" required>
+              <div class="skill-level">
+                <span class="skill-percentage">40%</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="92"></div>
+                </div>
               </div>
+            </div>
 
-              <div class="form-group">
-                <label for="subject" class="form-label" data-text="Sujet">Sujet</label>
-                <input type="text" id="subject" name="subject" class="form-input" placeholder="Objet de votre message" required>
+            <div class="skill-item">
+              <div class="skill-info">
+                <div class="skill-icon">
+                  <i class="fas fa-shield-alt"></i>
+                </div>
+                <div class="skill-details">
+                  <h4>Sécurité & Pare-feu</h4>
+                  <p>Proxy, VPN</p>
+                </div>
               </div>
-
-              <div class="form-group">
-                <label for="message" class="form-label" data-text="Message">Message</label>
-                <textarea id="message" name="message" class="form-textarea" rows="6" placeholder="Votre message..." required></textarea>
+              <div class="skill-level">
+                <span class="skill-percentage">30%</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="80"></div>
+                </div>
               </div>
+            </div>
 
-              <button type="submit" class="btn btn-primary" style="width: 100%;">
-                <i class="fas fa-paper-plane"></i>
-                <span data-text="Envoyer le message">Envoyer le message</span>
-              </button>
-            </form>
+            <div class="skill-item">
+              <div class="skill-info">
+                <div class="skill-icon">
+                  <i class="fas fa-terminal"></i>
+                </div>
+                <div class="skill-details">
+                  <h4>Scripting</h4>
+                  <p>PowerShell, Bash, Python</p>
+                </div>
+              </div>
+              <div class="skill-level">
+                <span class="skill-percentage">20%</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="75"></div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section" style="background: var(--bg-light-secondary);">
+    <div class="container">
+      <div class="section-header fade-in">
+        <div class="section-badge">
+          <i class="fas fa-folder-open"></i>
+          <span>Mes réalisations</span>
+        </div>
+        <h2 class="section-title">Projets & Réalisations</h2>
+        <p class="section-subtitle">
+          Découvrez mes projets professionnels et académiques
+        </p>
+      </div>
+
+      <div class="grid grid-3">
+        <div class="card scale-in">
+          <div style="margin-bottom: 2rem;">
+            <div style="width: 80px; height: 80px; background: linear-gradient(135deg, var(--primary), var(--secondary)); border-radius: 20px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+              <i class="fas fa-briefcase" style="font-size: 2rem; color: white;"></i>
+            </div>
+            <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1rem; color: var(--primary);">Réalisations Professionnelles</h3>
+            <p style="color: var(--text-light-secondary); margin-bottom: 1.5rem;">
+              Projets et missions réalisés en entreprise, démontrant mes compétences pratiques en environnement professionnel.
+            </p>
+            <a href="https://drive.google.com/drive/folders/1R0gwz5do2gZqCLOkqn0Fb0nlLE1wniXf?usp=drive_link" target="_blank" class="btn btn-primary">
+              <i class="fas fa-external-link-alt"></i>
+              <span>Voir les projets</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="card scale-in">
+          <div style="margin-bottom: 2rem;">
+            <div style="width: 80px; height: 80px; background: linear-gradient(135deg, var(--secondary), var(--accent)); border-radius: 20px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+              <i class="fas fa-graduation-cap" style="font-size: 2rem; color: white;"></i>
+            </div>
+            <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1rem; color: var(--primary);">Réalisations Académiques</h3>
+            <p style="color: var(--text-light-secondary); margin-bottom: 1.5rem;">
+              Travaux pratiques et projets étudiants réalisés durant ma formation BTS SIO SISR.
+            </p>
+            <a href="https://drive.google.com/drive/folders/1dKBVK1qHl-ObvrDof8_-_TLIegPayhJ7?usp=drive_link" target="_blank" class="btn btn-primary">
+              <i class="fas fa-external-link-alt"></i>
+              <span>Voir les projets</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="card scale-in">
+          <div style="margin-bottom: 2rem;">
+            <div style="width: 80px; height: 80px; background: linear-gradient(135deg, var(--accent), var(--success)); border-radius: 20px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+              <i class="fas fa-certificate" style="font-size: 2rem; color: white;"></i>
+            </div>
+            <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1rem; color: var(--primary);">Certifications</h3>
+            <p style="color: var(--text-light-secondary); margin-bottom: 1.5rem;">
+              Certifications professionnelles attestant de mes compétences techniques et de ma montée en expertise.
+            </p>
+            <a href="https://drive.google.com/drive/folders/1gX97jJW5LGQYaU5pusFFjXxP4jPWjknV?usp=drive_link" target="_blank" class="btn btn-primary">
+              <i class="fas fa-external-link-alt"></i>
+              <span>Voir les certifications</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-header fade-in">
+        <div class="section-badge">
+          <i class="fas fa-envelope"></i>
+          <span>Restons en contact</span>
+        </div>
+        <h2 class="section-title">Contactez-moi</h2>
+        <p class="section-subtitle">
+          N'hésitez pas à me contacter pour toute opportunité ou collaboration
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info fade-in">
+          <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 2rem; color: var(--primary);">Informations de contact</h3>
+          
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div>
+              <h4 style="font-weight: 600; margin-bottom: 0.25rem;">Email</h4>
+              <p style="color: var(--text-light-secondary);">Via le formulaire ci-contre</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fab fa-linkedin"></i>
+            </div>
+            <div>
+              <h4 style="font-weight: 600; margin-bottom: 0.25rem;">LinkedIn</h4>
+              <a href="https://www.linkedin.com/in/fares-elaissaoui/" target="_blank" style="color: var(--primary); text-decoration: none;">fares-elaissaoui</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fab fa-github"></i>
+            </div>
+            <div>
+              <h4 style="font-weight: 600; margin-bottom: 0.25rem;">GitHub</h4>
+              <a href="https://github.com/Fares6740" target="_blank" style="color: var(--primary); text-decoration: none;">Fares6740</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div>
+              <h4 style="font-weight: 600; margin-bottom: 0.25rem;">Localisation</h4>
+              <p style="color: var(--text-light-secondary);">Île-de-France, France</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card fade-in">
+          <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 2rem; color: var(--primary);">Envoyez-moi un message</h3>
+          
+          <form action="https://formspree.io/f/xovdrwba" method="POST" id="contactForm">
+            <div class="form-group">
+              <label for="name" class="form-label">Nom complet</label>
+              <input type="text" id="name" name="name" class="form-input" placeholder="Votre nom complet" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" id="email" name="email" class="form-input" placeholder="votre.email@exemple.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="subject" class="form-label">Sujet</label>
+              <input type="text" id="subject" name="subject" class="form-input" placeholder="Objet de votre message" required>
+            </div>
+
+            <div class="form-group">
+              <label for="message" class="form-label">Message</label>
+              <textarea id="message" name="message" class="form-textarea" rows="6" placeholder="Votre message..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              <i class="fas fa-paper-plane"></i>
+              <span>Envoyer le message</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
       <div class="footer-social">
-        <a href="https://github.com/Fares6740" target="_blank" class="social-link" aria-label="GitHub">
+        <a href="https://github.com/Fares6740" target="_blank" class="social-link">
           <i class="fab fa-github"></i>
         </a>
-        <a href="https://www.linkedin.com/in/fares-elaissaoui/" target="_blank" class="social-link" aria-label="LinkedIn">
+        <a href="https://www.linkedin.com/in/fares-elaissaoui/" target="_blank" class="social-link">
           <i class="fab fa-linkedin"></i>
         </a>
-        <a href="#contact" class="social-link" aria-label="Contact">
+        <a href="#contact" class="social-link">
           <i class="fas fa-envelope"></i>
         </a>
       </div>
       <p style="margin-bottom: 0.5rem; font-weight: 600;">&copy; 2025 Fares Elaissaoui</p>
-      <p style="color: var(--text-dark-secondary); font-size: 0.9rem;" data-text="Conçu avec passion pour l'excellence technique">Conçu avec passion pour l'excellence technique</p>
+      <p style="color: var(--text-dark-secondary); font-size: 0.9rem;">Conçu avec passion pour l'excellence technique</p>
     </div>
   </footer>
 
-  <!-- Modals -->
-  <div class="modal" id="experienceModal">
-    <div class="modal-content">
-      <button class="modal-close" onclick="closeModal()">&times;</button>
-      <div id="modalContent"></div>
-    </div>
-  </div>
-
   <script>
-    // ===== VARIABLES GLOBALES =====
+    // Variables globales
     let isDarkMode = false;
     let particles = [];
-    let currentLanguage = 'fr';
-    let isScrolling = false;
-    let preloaderHidden = false;
+    let animationId;
 
-    // ===== PRELOADER SIMPLE =====
-    function hidePreloader() {
-      if (preloaderHidden) return; // Éviter les appels multiples
-      preloaderHidden = true;
-      
-      const preloader = document.getElementById('preloader');
-      if (preloader) {
-        console.log('Hiding preloader...');
-        preloader.style.opacity = '0';
-        setTimeout(() => {
-          preloader.style.display = 'none';
-          console.log('Preloader hidden');
-        }, 300);
-      }
-    }
-
-    // ===== INITIALISATION SIMPLIFIÉE =====
+    // Initialisation
     document.addEventListener('DOMContentLoaded', function() {
-      console.log('DOM loaded, initializing...');
-      
-      // Hide preloader immediately for testing
-      setTimeout(hidePreloader, 500);
-      
-      // Initialize basic functions
       initializeTheme();
-      setupNavigation();
+      createParticles3D();
       setupScrollAnimations();
+      setupNavigation();
+      setupCursorTrail();
+      setupSkillBars();
       setupFormHandling();
-      
-      // Initialize advanced features after a delay
-      setTimeout(() => {
-        createParticles3D();
-        setupCursorTrail();
-        setupSkillBars();
-        setupParallaxEffects();
-        setupCounters();
-        setupTypewriter();
-        setupLanguageToggle();
-        setupBreadcrumb();
-        setupCardEffects();
-        
-        console.log('All features initialized');
-      }, 100);
+      setupParallaxEffects();
     });
 
-    // ===== THEME MANAGEMENT =====
+    // Gestion du thème
     function toggleTheme() {
       isDarkMode = !isDarkMode;
       document.body.classList.toggle('dark', isDarkMode);
@@ -2275,92 +1486,21 @@
       setTimeout(() => {
         icon.style.transform = 'rotate(0deg)';
       }, 400);
-
-      // Save preference
-      localStorage.setItem('darkMode', isDarkMode);
     }
 
     function initializeTheme() {
-      // Check saved preference or system preference
-      const savedTheme = localStorage.getItem('darkMode');
-      const systemDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-      
-      isDarkMode = savedTheme ? JSON.parse(savedTheme) : systemDark;
-      
-      if (isDarkMode) {
+      // Détecter le thème système
+      if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        isDarkMode = true;
         document.body.classList.add('dark');
         document.getElementById('themeIcon').className = 'fas fa-sun';
       }
     }
 
-    // Translations - Version simplifiée
-    const translations = {
-      fr: {
-        'Expert en Infrastructure IT': 'Expert en Infrastructure IT',
-        'Étudiant BTS SIO SISR • Spécialiste Systèmes & Réseaux': 'Étudiant BTS SIO SISR • Spécialiste Systèmes & Réseaux',
-        'Me contacter': 'Me contacter',
-        'Voir mes projets': 'Voir mes projets'
-      },
-      en: {
-        'Expert en Infrastructure IT': 'IT Infrastructure Expert',
-        'Étudiant BTS SIO SISR • Spécialiste Systèmes & Réseaux': 'BTS SIO SISR Student • Systems & Networks Specialist',
-        'Me contacter': 'Contact me',
-        'Voir mes projets': 'View my projects'
-      }
-    };
-    // ===== LANGUAGE TOGGLE =====
-    function setupLanguageToggle() {
-      try {
-        const langButtons = document.querySelectorAll('.lang-btn');
-        
-        langButtons.forEach(btn => {
-          btn.addEventListener('click', (e) => {
-            e.preventDefault();
-            const lang = btn.getAttribute('data-lang');
-            switchLanguage(lang);
-            
-            // Update active state
-            langButtons.forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-          });
-        });
-      } catch (error) {
-        console.log('Language toggle setup error:', error);
-      }
-    }
-
-    function switchLanguage(lang) {
-      try {
-        currentLanguage = lang;
-        
-        // Update basic text elements only
-        document.querySelectorAll('[data-text]').forEach(element => {
-          const key = element.getAttribute('data-text');
-          if (translations[lang] && translations[lang][key]) {
-            element.textContent = translations[lang][key];
-          }
-        });
-        
-        localStorage.setItem('language', lang);
-      } catch (error) {
-        console.log('Language switch error:', error);
-      }
-    }
-
-    // ===== SCROLL PROGRESS =====
-    function updateScrollProgress() {
-      const scrollProgress = document.getElementById('scrollProgress');
-      const scrollTop = window.pageYOffset;
-      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-      const scrollPercent = (scrollTop / docHeight) * 100;
-      
-      scrollProgress.style.width = scrollPercent + '%';
-    }
-
-    // ===== PARTICLES 3D =====
+    // Création des particules 3D
     function createParticles3D() {
       const container = document.getElementById('particles3d');
-      const particleCount = window.innerWidth < 768 ? 15 : 30;
+      const particleCount = 30;
 
       for (let i = 0; i < particleCount; i++) {
         const particle = document.createElement('div');
@@ -2384,60 +1524,34 @@
       }
     }
 
-    // ===== TYPEWRITER EFFECT SIMPLIFIÉ =====
-    function setupTypewriter() {
-      try {
-        const typewriterElement = document.querySelector('.typewriter');
-        if (typewriterElement) {
-          // Remove typewriter class to prevent CSS conflicts
-          typewriterElement.classList.remove('typewriter');
-          console.log('Typewriter setup complete');
-        }
-      } catch (error) {
-        console.log('Typewriter setup error:', error);
-      }
-    }
+    // Animation de défilement
+    function setupScrollAnimations() {
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+      };
 
-    // ===== COUNTERS ANIMATION =====
-    function setupCounters() {
-      const counters = document.querySelectorAll('[data-count]');
-      
       const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            const counter = entry.target;
-            const target = parseInt(counter.getAttribute('data-count'));
-            animateCounter(counter, target);
+            entry.target.classList.add('visible');
           }
         });
-      }, { threshold: 0.5 });
+      }, observerOptions);
 
-      counters.forEach((counter) => observer.observe(counter));
+      // Observer tous les éléments avec des classes d'animation
+      document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right, .scale-in').forEach((el) => {
+        observer.observe(el);
+      });
     }
 
-    function animateCounter(element, target) {
-      let current = 0;
-      const increment = target / 50;
-      const timer = setInterval(() => {
-        current += increment;
-        if (current >= target) {
-          element.textContent = target;
-          clearInterval(timer);
-        } else {
-          element.textContent = Math.floor(current);
-        }
-      }, 40);
-    }
-
-    // ===== NAVIGATION ENHANCED =====
+    // Navigation
     function setupNavigation() {
       const navbar = document.getElementById('navbar');
       const navLinks = document.querySelectorAll('.nav-link');
 
       // Gestion du scroll de la navbar
       window.addEventListener('scroll', () => {
-        updateScrollProgress();
-        
         if (window.scrollY > 100) {
           navbar.classList.add('scrolled');
         } else {
@@ -2445,7 +1559,7 @@
         }
       });
 
-      // Navigation fluide avec gestion améliorée
+      // Navigation fluide
       navLinks.forEach(link => {
         link.addEventListener('click', (e) => {
           e.preventDefault();
@@ -2461,142 +1575,37 @@
           
           if (targetSection) {
             const offsetTop = targetSection.offsetTop - 100;
-            smoothScrollTo(offsetTop);
+            window.scrollTo({
+              top: offsetTop,
+              behavior: 'smooth'
+            });
           }
         });
       });
 
       // Mise à jour de la navigation en fonction du scroll
-      window.addEventListener('scroll', throttle(() => {
-        updateActiveNavigation();
-        updateBreadcrumb();
-      }, 100));
-    }
+      window.addEventListener('scroll', () => {
+        const sections = document.querySelectorAll('section[id]');
+        const scrollPos = window.scrollY + 150;
 
-    function updateActiveNavigation() {
-      const sections = document.querySelectorAll('section[id]');
-      const scrollPos = window.scrollY + 150;
-      const navLinks = document.querySelectorAll('.nav-link');
+        sections.forEach(section => {
+          const sectionTop = section.offsetTop;
+          const sectionHeight = section.offsetHeight;
+          const sectionId = section.getAttribute('id');
 
-      sections.forEach(section => {
-        const sectionTop = section.offsetTop;
-        const sectionHeight = section.offsetHeight;
-        const sectionId = section.getAttribute('id');
-
-        if (scrollPos >= sectionTop && scrollPos < sectionTop + sectionHeight) {
-          navLinks.forEach(link => {
-            link.classList.remove('active');
-            if (link.getAttribute('href') === `#${sectionId}`) {
-              link.classList.add('active');
-            }
-          });
-        }
-      });
-    }
-
-    // ===== MOBILE MENU =====
-    function toggleMobileMenu() {
-      const navLinks = document.getElementById('navLinks');
-      const menuToggle = document.querySelector('.mobile-menu-toggle');
-      
-      navLinks.classList.toggle('mobile-hidden');
-      
-      // Change icon
-      const icon = menuToggle.querySelector('i');
-      icon.className = navLinks.classList.contains('mobile-hidden') ? 'fas fa-bars' : 'fas fa-times';
-    }
-
-    // ===== BREADCRUMB =====
-    function setupBreadcrumb() {
-      const breadcrumbItems = document.querySelectorAll('.breadcrumb-item');
-      
-      breadcrumbItems.forEach((item, index) => {
-        item.addEventListener('click', () => {
-          const section = item.getAttribute('data-section');
-          const targetElement = document.getElementById(section);
-          
-          if (targetElement) {
-            const offsetTop = targetElement.offsetTop - 100;
-            smoothScrollTo(offsetTop);
-          }
-        });
-      });
-    }
-
-    function updateBreadcrumb() {
-      const sections = document.querySelectorAll('section[id]');
-      const scrollPos = window.scrollY + 150;
-      const breadcrumbItems = document.querySelectorAll('.breadcrumb-item');
-
-      sections.forEach((section, index) => {
-        const sectionTop = section.offsetTop;
-        const sectionHeight = section.offsetHeight;
-        const sectionId = section.getAttribute('id');
-
-        if (scrollPos >= sectionTop && scrollPos < sectionTop + sectionHeight) {
-          breadcrumbItems.forEach(item => item.classList.remove('active'));
-          const activeItem = document.querySelector(`[data-section="${sectionId}"]`);
-          if (activeItem) {
-            activeItem.classList.add('active');
-          }
-        }
-      });
-    }
-
-    // ===== SMOOTH SCROLL =====
-    function smoothScrollTo(target, duration = 800) {
-      const start = window.pageYOffset;
-      const change = target - start;
-      const startTime = performance.now();
-      
-      function animateScroll(currentTime) {
-        const elapsed = currentTime - startTime;
-        const progress = Math.min(elapsed / duration, 1);
-        
-        const ease = progress * (2 - progress); // easeOutQuad
-        window.scrollTo(0, start + change * ease);
-        
-        if (progress < 1) {
-          requestAnimationFrame(animateScroll);
-        }
-      }
-      
-      requestAnimationFrame(animateScroll);
-    }
-
-    // ===== SCROLL ANIMATIONS =====
-    function setupScrollAnimations() {
-      const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
-      };
-
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-            
-            // Animate skill bars when visible
-            if (entry.target.classList.contains('skill-item')) {
-              const skillBar = entry.target.querySelector('.skill-progress');
-              if (skillBar) {
-                const width = skillBar.getAttribute('data-width');
-                setTimeout(() => {
-                  skillBar.style.width = width + '%';
-                }, 300);
+          if (scrollPos >= sectionTop && scrollPos < sectionTop + sectionHeight) {
+            navLinks.forEach(link => {
+              link.classList.remove('active');
+              if (link.getAttribute('href') === `#${sectionId}`) {
+                link.classList.add('active');
               }
-            }
+            });
           }
         });
-      }, observerOptions);
-
-      // Observer tous les éléments avec des classes d'animation
-      document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right, .scale-in, .skill-item').forEach((el) => {
-        observer.observe(el);
       });
     }
 
-    // ===== CURSOR TRAIL =====
+    // Traînée de curseur
     function setupCursorTrail() {
       const trail = document.getElementById('cursorTrail');
       let mouseX = 0, mouseY = 0;
@@ -2625,16 +1634,28 @@
       animateTrail();
     }
 
-    // ===== SKILL BARS =====
+    // Animation des barres de compétences
     function setupSkillBars() {
       const skillBars = document.querySelectorAll('.skill-progress');
       
-      skillBars.forEach(bar => {
-        bar.style.width = '0%';
-      });
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const bar = entry.target;
+            const width = bar.getAttribute('data-width');
+            bar.style.width = '0%';
+            
+            setTimeout(() => {
+              bar.style.width = width + '%';
+            }, 500);
+          }
+        });
+      }, { threshold: 0.5 });
+
+      skillBars.forEach((bar) => observer.observe(bar));
     }
 
-    // ===== FORM HANDLING =====
+    // Gestion du formulaire
     function setupFormHandling() {
       const form = document.getElementById('contactForm');
       
@@ -2645,10 +1666,9 @@
         submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> <span>Envoi en cours...</span>';
         submitBtn.disabled = true;
         
-        // Success animation
+        // Laisser le formulaire se soumettre normalement à Formspree
         setTimeout(() => {
           submitBtn.innerHTML = '<i class="fas fa-check"></i> <span>Message envoyé !</span>';
-          showNotification('Message envoyé avec succès !', 'success');
           
           setTimeout(() => {
             submitBtn.innerHTML = originalText;
@@ -2657,46 +1677,11 @@
           }, 3000);
         }, 2000);
       });
-
-      // Real-time validation
-      const inputs = form.querySelectorAll('input, textarea');
-      inputs.forEach(input => {
-        input.addEventListener('blur', validateField);
-        input.addEventListener('input', clearValidation);
-      });
     }
 
-    function validateField(e) {
-      const field = e.target;
-      const value = field.value.trim();
-      
-      // Remove existing validation
-      field.classList.remove('error', 'success');
-      
-      if (field.required && !value) {
-        field.classList.add('error');
-        return false;
-      }
-      
-      if (field.type === 'email' && value) {
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!emailRegex.test(value)) {
-          field.classList.add('error');
-          return false;
-        }
-      }
-      
-      field.classList.add('success');
-      return true;
-    }
-
-    function clearValidation(e) {
-      e.target.classList.remove('error', 'success');
-    }
-
-    // ===== PARALLAX EFFECTS =====
+    // Effets de parallaxe
     function setupParallaxEffects() {
-      window.addEventListener('scroll', throttle(() => {
+      window.addEventListener('scroll', () => {
         const scrolled = window.pageYOffset;
         const rate = scrolled * -0.5;
         
@@ -2712,192 +1697,10 @@
           const yPos = rate * speed;
           particle.style.transform = `translateY(${yPos}px)`;
         });
-      }, 16));
-    }
-
-    // ===== MODALS =====
-    function openModal(modalId) {
-      const modal = document.getElementById('experienceModal');
-      const modalContent = document.getElementById('modalContent');
-      
-      // Content based on modalId
-      const modalData = {
-        experience1: {
-          title: 'BTS SIO SISR - H3 Campus',
-          date: '2024-2026',
-          content: `
-            <h3>Formation complète en infrastructure IT</h3>
-            <p>Formation spécialisée dans l'administration des systèmes et réseaux, couvrant :</p>
-            <ul>
-              <li>Administration système Linux et Windows Server</li>
-              <li>Configuration et gestion de réseaux TCP/IP</li>
-              <li>Virtualisation avec VMware et Proxmox</li>
-              <li>Sécurité informatique et pare-feu</li>
-              <li>Supervision et monitoring d'infrastructure</li>
-            </ul>
-          `
-        },
-        experience2: {
-          title: 'Stage IT - Ministère de l\'Intérieur',
-          date: 'Février - Avril 2024',
-          content: `
-            <h3>Expérience en environnement gouvernemental</h3>
-            <p>Missions réalisées :</p>
-            <ul>
-              <li>Support technique niveau 1 et 2</li>
-              <li>Configuration de profils utilisateurs Active Directory</li>
-              <li>Installation et configuration de solutions VPN</li>
-              <li>Maintenance préventive du parc informatique</li>
-              <li>Documentation des procédures IT</li>
-            </ul>
-          `
-        },
-        project1: {
-          title: 'Réalisations Professionnelles',
-          content: `
-            <h3>Projets en entreprise</h3>
-            <p>Collection de projets réalisés en environnement professionnel :</p>
-            <ul>
-              <li>Mise en place d'infrastructures virtualisées</li>
-              <li>Configuration de réseaux d'entreprise</li>
-              <li>Implémentation de solutions de sécurité</li>
-              <li>Automatisation de tâches administratives</li>
-            </ul>
-            <a href="https://drive.google.com/drive/folders/1R0gwz5do2gZqCLOkqn0Fb0nlLE1wniXf?usp=drive_link" target="_blank" class="btn btn-primary">Voir les détails</a>
-          `
-        }
-      };
-      
-      const data = modalData[modalId];
-      if (data) {
-        modalContent.innerHTML = `
-          <h2>${data.title}</h2>
-          ${data.date ? `<p class="timeline-date">${data.date}</p>` : ''}
-          ${data.content}
-        `;
-        
-        modal.classList.add('active');
-        document.body.style.overflow = 'hidden';
-      }
-    }
-
-    function closeModal() {
-      const modal = document.getElementById('experienceModal');
-      modal.classList.remove('active');
-      document.body.style.overflow = 'auto';
-    }
-
-    // Close modal on outside click
-    document.addEventListener('click', (e) => {
-      const modal = document.getElementById('experienceModal');
-      if (e.target === modal) {
-        closeModal();
-      }
-    });
-
-    // ===== SHARING FUNCTIONS =====
-    function shareProject(projectName) {
-      if (navigator.share) {
-        navigator.share({
-          title: `Projet: ${projectName} - Fares Elaissaoui`,
-          text: 'Découvrez ce projet réalisé par Fares Elaissaoui, expert SISR',
-          url: window.location.href
-        });
-      } else {
-        copyToClipboard(window.location.href);
-        showNotification('Lien copié dans le presse-papiers !', 'success');
-      }
-    }
-
-    function sharePortfolio(platform) {
-      const url = encodeURIComponent(window.location.href);
-      const text = encodeURIComponent('Découvrez le portfolio de Fares Elaissaoui, expert SISR');
-      
-      const shareUrls = {
-        twitter: `https://twitter.com/intent/tweet?url=${url}&text=${text}`,
-        linkedin: `https://www.linkedin.com/sharing/share-offsite/?url=${url}`,
-        email: `mailto:?subject=Portfolio Fares Elaissaoui&body=${text} ${url}`
-      };
-      
-      if (shareUrls[platform]) {
-        window.open(shareUrls[platform], '_blank', 'width=600,height=400');
-      }
-    }
-
-    function copyLink() {
-      copyToClipboard(window.location.href);
-      showNotification('Lien copié dans le presse-papiers !', 'success');
-    }
-
-    function copyToClipboard(text) {
-      navigator.clipboard.writeText(text).catch(err => {
-        // Fallback for older browsers
-        const textArea = document.createElement('textarea');
-        textArea.value = text;
-        document.body.appendChild(textArea);
-        textArea.select();
-        document.execCommand('copy');
-        document.body.removeChild(textArea);
       });
     }
 
-    // ===== NOTIFICATIONS =====
-    function showNotification(message, type = 'info') {
-      const notification = document.createElement('div');
-      notification.className = `notification ${type}`;
-      notification.style.cssText = `
-        position: fixed;
-        top: 2rem;
-        right: 2rem;
-        background: ${type === 'success' ? 'var(--success)' : 'var(--primary)'};
-        color: white;
-        padding: 1rem 1.5rem;
-        border-radius: var(--border-radius-small);
-        box-shadow: var(--shadow-medium);
-        z-index: 10000;
-        transform: translateX(100%);
-        transition: var(--transition);
-      `;
-      notification.textContent = message;
-      
-      document.body.appendChild(notification);
-      
-      // Animate in
-      setTimeout(() => {
-        notification.style.transform = 'translateX(0)';
-      }, 100);
-      
-      // Remove after delay
-      setTimeout(() => {
-        notification.style.transform = 'translateX(100%)';
-        setTimeout(() => {
-          document.body.removeChild(notification);
-        }, 400);
-      }, 3000);
-    }
-
-    // ===== CARD EFFECTS =====
-    function setupCardEffects() {
-      const cards = document.querySelectorAll('.card, .project-card');
-      
-      cards.forEach(card => {
-        card.addEventListener('mousemove', (e) => {
-          const rect = card.getBoundingClientRect();
-          const x = ((e.clientX - rect.left) / rect.width) * 100;
-          const y = ((e.clientY - rect.top) / rect.height) * 100;
-          
-          card.style.setProperty('--mouse-x', `${x}%`);
-          card.style.setProperty('--mouse-y', `${y}%`);
-        });
-        
-        card.addEventListener('mouseleave', () => {
-          card.style.setProperty('--mouse-x', '50%');
-          card.style.setProperty('--mouse-y', '50%');
-        });
-      });
-    }
-
-    // ===== RIPPLE EFFECT =====
+    // Effets spéciaux au clic
     function createRippleEffect(e) {
       const ripple = document.createElement('div');
       const rect = e.currentTarget.getBoundingClientRect();
@@ -2927,93 +1730,26 @@
       }, 600);
     }
 
-    // ===== ANALYTICS SIMPLIFIÉ =====
-    function setupAnalytics() {
-      // Version simplifiée sans tracking externe
-      console.log('Analytics initialized (basic version)');
-    }
-
-    // ===== SERVICE WORKER SIMPLIFIÉ =====
-    function setupServiceWorker() {
-      // Skip service worker for now
-      console.log('Service Worker skipped');
-    }
-
-    // ===== PERFORMANCE MONITORING SIMPLIFIÉ =====
-    function monitorPerformance() {
-      if ('performance' in window) {
-        window.addEventListener('load', () => {
-          setTimeout(() => {
-            const perfData = performance.timing;
-            const loadTime = perfData.loadEventEnd - perfData.navigationStart;
-            console.log(`Page loaded in ${loadTime}ms`);
-          }, 0);
-        });
-      }
-    }
-
-    // ===== UTILITY FUNCTIONS =====
-    function throttle(func, limit) {
-      let inThrottle;
-      return function() {
-        const args = arguments;
-        const context = this;
-        if (!inThrottle) {
-          func.apply(context, args);
-          inThrottle = true;
-          setTimeout(() => inThrottle = false, limit);
-        }
-      }
-    }
-
-    function debounce(func, wait, immediate) {
-      let timeout;
-      return function() {
-        const context = this, args = arguments;
-        const later = function() {
-          timeout = null;
-          if (!immediate) func.apply(context, args);
-        };
-        const callNow = immediate && !timeout;
-        clearTimeout(timeout);
-        timeout = setTimeout(later, wait);
-        if (callNow) func.apply(context, args);
-      };
-    }
-
-    // ===== EVENT LISTENERS =====
+    // Ajouter l'effet ripple aux boutons
     document.addEventListener('DOMContentLoaded', () => {
-      setupCardEffects();
-      
-      // Add ripple effect to buttons
       document.querySelectorAll('.btn').forEach(btn => {
         btn.addEventListener('click', createRippleEffect);
       });
-      
-      // Keyboard navigation
-      document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape') {
-          closeModal();
-        }
-      });
     });
 
-    // ===== RESPONSIVE HANDLING =====
-    window.addEventListener('resize', debounce(() => {
-      // Repositionner les particules
-      particles.forEach(particle => {
-        particle.style.left = Math.random() * 100 + '%';
-        particle.style.top = Math.random() * 100 + '%';
-      });
-      
-      // Update mobile menu
-      if (window.innerWidth > 768) {
-        const navLinks = document.getElementById('navLinks');
-        navLinks.classList.remove('mobile-hidden');
+    // Animation CSS pour le ripple
+    const rippleStyle = document.createElement('style');
+    rippleStyle.textContent = `
+      @keyframes ripple {
+        to {
+          transform: scale(2);
+          opacity: 0;
+        }
       }
-    }, 250));
+    `;
+    document.head.appendChild(rippleStyle);
 
-    // ===== EASTER EGGS =====
+    // Easter eggs et interactions avancées
     let konamiCode = '';
     const konami = '38384040373937396665';
     
@@ -3026,7 +1762,6 @@
       if (konamiCode === konami) {
         // Effet arc-en-ciel
         document.body.style.animation = 'rainbow 3s ease-in-out';
-        showNotification('🎉 Konami Code activé ! Mode arc-en-ciel !', 'success');
         
         // Faire danser les particules
         particles.forEach((particle, index) => {
@@ -3042,61 +1777,143 @@
       }
     });
 
-    // ===== ACCESSIBILITY =====
-    // Focus management
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Tab') {
-        document.body.classList.add('keyboard-navigation');
+    // Animation arc-en-ciel
+    const rainbowStyle = document.createElement('style');
+    rainbowStyle.textContent = `
+      @keyframes rainbow {
+        0% { filter: hue-rotate(0deg) saturate(1); }
+        25% { filter: hue-rotate(90deg) saturate(1.5); }
+        50% { filter: hue-rotate(180deg) saturate(2); }
+        75% { filter: hue-rotate(270deg) saturate(1.5); }
+        100% { filter: hue-rotate(360deg) saturate(1); }
       }
+    `;
+    document.head.appendChild(rainbowStyle);
+
+    // Gestion du redimensionnement
+    window.addEventListener('resize', () => {
+      // Repositionner les particules
+      particles.forEach(particle => {
+        particle.style.left = Math.random() * 100 + '%';
+        particle.style.top = Math.random() * 100 + '%';
+      });
     });
 
-    document.addEventListener('mousedown', () => {
-      document.body.classList.remove('keyboard-navigation');
-    });
-
-    // High contrast mode detection
-    if (window.matchMedia && window.matchMedia('(prefers-contrast: high)').matches) {
-      document.body.classList.add('high-contrast');
+    // Fonction de performance monitoring (optionnel)
+    function monitorPerformance() {
+      if ('performance' in window) {
+        window.addEventListener('load', () => {
+          const perfData = performance.timing;
+          const loadTime = perfData.loadEventEnd - perfData.navigationStart;
+          console.log(`Page loaded in ${loadTime}ms`);
+        });
+      }
     }
 
-    // Reduced motion detection
-    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-      document.body.classList.add('reduced-motion');
+    // Preloader effect
+    function showPreloader() {
+      const preloader = document.createElement('div');
+      preloader.style.cssText = `
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(135deg, var(--primary), var(--secondary));
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 10000;
+        transition: opacity 0.5s ease;
+      `;
+      
+      preloader.innerHTML = `
+        <div style="text-align: center; color: white;">
+          <div style="width: 60px; height: 60px; border: 4px solid rgba(255,255,255,0.3); border-top: 4px solid white; border-radius: 50%; animation: spin 1s linear infinite; margin: 0 auto 1rem;"></div>
+          <p style="font-size: 1.2rem; font-weight: 600;">Chargement du portfolio...</p>
+        </div>
+      `;
+      
+      document.body.appendChild(preloader);
+      
+      setTimeout(() => {
+        preloader.style.opacity = '0';
+        setTimeout(() => {
+          preloader.remove();
+        }, 500);
+      }, 1500);
+    }
+
+    // Ajouter l'animation de spin pour le preloader
+    const spinStyle = document.createElement('style');
+    spinStyle.textContent = `
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+    `;
+    document.head.appendChild(spinStyle);
+
+    // Initialiser le preloader
+    document.addEventListener('DOMContentLoaded', () => {
+      showPreloader();
+      monitorPerformance();
+    });
+
+    // Interaction avec les cards - effet lumineux qui suit la souris
+    document.addEventListener('DOMContentLoaded', () => {
+      const cards = document.querySelectorAll('.card');
+      
+      cards.forEach(card => {
+        card.addEventListener('mousemove', (e) => {
+          const rect = card.getBoundingClientRect();
+          const x = ((e.clientX - rect.left) / rect.width) * 100;
+          const y = ((e.clientY - rect.top) / rect.height) * 100;
+          
+          card.style.setProperty('--mouse-x', `${x}%`);
+          card.style.setProperty('--mouse-y', `${y}%`);
+        });
+        
+        card.addEventListener('mouseleave', () => {
+          card.style.setProperty('--mouse-x', '50%');
+          card.style.setProperty('--mouse-y', '50%');
+        });
+      });
+    });
+
+    // Smooth scroll polyfill pour les navigateurs plus anciens
+    if (!window.CSS || !CSS.supports('scroll-behavior', 'smooth')) {
+      function smoothScrollTo(element, target, duration) {
+        const start = element.scrollTop;
+        const change = target - start;
+        const startTime = performance.now();
+        
+        function animateScroll(currentTime) {
+          const elapsed = currentTime - startTime;
+          const progress = Math.min(elapsed / duration, 1);
+          
+          const ease = progress * (2 - progress); // easeOutQuad
+          element.scrollTop = start + change * ease;
+          
+          if (progress < 1) {
+            requestAnimationFrame(animateScroll);
+          }
+        }
+        
+        requestAnimationFrame(animateScroll);
+      }
+      
+      // Remplacer le comportement de scroll natif
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            smoothScrollTo(window, target.offsetTop - 100, 800);
+          }
+        });
+      });
     }
   </script>
-
-  <style>
-    /* Additional CSS for enhanced features */
-    .form-input.error, .form-textarea.error {
-      border-color: var(--danger);
-      box-shadow: 0 0 0 4px rgba(239, 68, 68, 0.1);
-    }
-
-    .form-input.success, .form-textarea.success {
-      border-color: var(--success);
-      box-shadow: 0 0 0 4px rgba(16, 185, 129, 0.1);
-    }
-
-    .keyboard-navigation *:focus {
-      outline: 3px solid var(--accent);
-      outline-offset: 2px;
-    }
-
-    .high-contrast {
-      filter: contrast(150%);
-    }
-
-    .reduced-motion *, .reduced-motion *::before, .reduced-motion *::after {
-      animation-duration: 0.01ms !important;
-      animation-iteration-count: 1 !important;
-      transition-duration: 0.01ms !important;
-    }
-
-    @media (max-width: 768px) {
-      .nav-links.mobile-hidden {
-        display: none;
-      }
-    }
-  </style>
 </body>
 </html>
